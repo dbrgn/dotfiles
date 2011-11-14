@@ -97,6 +97,3 @@ set completeopt=menuone,longest,preview
 " Map rope commands
 map <leader>j :RopeGotoDefinition<CR>
 map <leader>r :RopeRename<CR>
-
-" Map task list
-map <leader>td <Plug>TaskList
