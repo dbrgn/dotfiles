@@ -87,9 +87,16 @@ command! WQ  wq
 let g:pyflakes_use_quickfix = 0
 
 " Use pep8 validation
-au FileType python let g:pep8_map='<leader>8'
+let g:pep8_map='<leader>8'
 
 " Configure tab completion
 au FileType python set omnifunc=pythoncomplete#Complete
 let g:SuperTabDefaultCompletionType = "context"
 set completeopt=menuone,longest,preview
+
+" Map rope commands
+map <leader>j :RopeGotoDefinition<CR>
+map <leader>r :RopeRename<CR>
+
+" Map task list
+map <leader>td <Plug>TaskList
