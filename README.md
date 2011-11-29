@@ -9,3 +9,7 @@ My personal vim config. Contains many tools for Python development.
  5. git submodule update
  6. git submodule foreach git submodule init
  7. git submodule foreach git submodule update
+
+## Requirements ##
+
+ * vim compiled with Python and Ruby support
