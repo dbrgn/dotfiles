@@ -19,6 +19,10 @@ filetype indent plugin on
 set background=dark
 syntax on
 
+" Custom highlighting colors
+hi Folded ctermbg=17
+hi Folded ctermfg=159
+
 " Map leader key
 let mapleader = ","
 
@@ -55,6 +59,7 @@ set hlsearch        " Highlight search results
 set backspace=2     " Allow backspacing over everything
 set hidden          " Better support to put buffers in the background
 set scrolloff=3     " Scroll 3 lines before reaching the current viewport end
+set foldmethod=marker " Use markers for folding
 
 " Tab shortcuts
 map <C-n> :tabn<Enter>
