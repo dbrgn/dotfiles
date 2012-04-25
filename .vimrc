@@ -98,7 +98,7 @@ let g:pyflakes_use_quickfix = 0
 let g:pep8_map='<leader>8'
 
 " Configure tab completion
-au FileType python set omnifunc=pythoncomplete#Complete
+au FileType python set omnifunc=jedi#Complete
 let g:SuperTabDefaultCompletionType = "context"
 set completeopt=menuone,longest,preview
 
