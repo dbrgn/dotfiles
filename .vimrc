@@ -60,6 +60,7 @@ set backspace=2     " Allow backspacing over everything
 set hidden          " Better support to put buffers in the background
 set scrolloff=3     " Scroll 3 lines before reaching the current viewport end
 set foldmethod=marker " Use markers for folding
+set tabpagemax=50   " Max tabs for vim -p
 
 " Tab shortcuts
 map <C-n> :tabn<Enter>
@@ -76,6 +77,8 @@ map <C-l> <C-w>>
 " Toggle whitespace with ,s
 set listchars=tab:>-,trail:·,eol:$
 nmap <silent> <leader>s :set nolist!<CR>
+map <C-j> 5j
+map <C-k> 5k
 
 " Useful aliases
 command! Q  q
