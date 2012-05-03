@@ -101,3 +101,16 @@ set completeopt=menuone,longest,preview
 " Map rope commands
 map <leader>j :RopeGotoDefinition<CR>
 map <leader>r :RopeRename<CR>
+
+" Grep will sometimes skip displaying the file name if you search
+" in a singe file. This will confuse Latex-Suite. Set your grep
+" program to always generate a file-name.
+set grepprg=grep\ -nH\ $*
+
+" Starting with Vim 7, the filetype of empty .tex files defaults to
+" 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
+" The following changes the default filetype back to 'tex'
+let g:tex_flavor='latex'
+
+" Compile latex and restart mupdf
+map <leader>l :w<CR> :!rubber -m pdftex % && killall -HUP mupdf<CR><CR>
