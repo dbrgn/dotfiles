@@ -39,10 +39,6 @@ set expandtab       " Use spaces instead of tabs
 " Extended % matching
 runtime macros/matchit.vim
 
-" Put all temporary files in a central spot
-set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
-set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
-
 " Other settings
 set ruler           " Show the line and column number in status line
 set showcmd         " Show (partial) command in status line
