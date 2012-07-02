@@ -1,15 +1,20 @@
-My personal vim config. Contains many tools for Python development.
+My personal configuration files.
 
-## Setup ##
+## Vim
 
- 1. git clone git://github.com/gwrtheyrn/vimconfig.git ~/.vim
- 2. ln -s ~/.vim/.vimrc ~
- 3. cd ~/.vim
- 4. git submodule init
- 5. git submodule update
- 6. git submodule foreach git submodule init
- 7. git submodule foreach git submodule update
+Contains many tools for Python development.
 
-## Requirements ##
+### Setup
+
+ 1. git clone git://github.com/gwrtheyrn/dotfiles.git ~/.dotfiles
+ 2. ln -s ~/.dotfiles/.vim ~
+ 3. ln -s ~/.dotfiles/.vimrc ~
+ 4. cd ~/.vim
+ 5. git submodule init
+ 6. git submodule update
+ 7. git submodule foreach git submodule init
+ 8. git submodule foreach git submodule update
+
+### Requirements
 
  * vim compiled with Python and Ruby support
