@@ -1,19 +1,22 @@
 My personal configuration files.
 
+## Setup
+
+ 1. git clone git://github.com/gwrtheyrn/dotfiles.git ~/.dotfiles
+ 2. git submodule init
+ 3. git submodule update
+ 4. git submodule foreach git submodule init
+ 5. git submodule foreach git submodule update
+
 ## Vim
 
 Contains many tools for Python development.
 
 ### Setup
 
- 1. git clone git://github.com/gwrtheyrn/dotfiles.git ~/.dotfiles
- 2. ln -s ~/.dotfiles/.vim ~
- 3. ln -s ~/.dotfiles/.vimrc ~
- 4. cd ~/.vim
- 5. git submodule init
- 6. git submodule update
- 7. git submodule foreach git submodule init
- 8. git submodule foreach git submodule update
+ 1. ln -s ~/.dotfiles/.vim ~
+ 2. ln -s ~/.dotfiles/.vimrc ~
+ 3. cd ~/.vim
 
 ### Requirements
 
