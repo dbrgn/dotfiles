@@ -89,8 +89,9 @@ command! WQ  wq
 " Don't use pyflakes quickfix feature
 let g:pyflakes_use_quickfix = 0
 
-" Use pep8 validation
-let g:pep8_map = '<leader>8'
+" Configure flake8
+let g:flake8_ignore=""
+let g:flake8_max_line_length="99"
 
 " Configure tab completion
 au FileType python set omnifunc=jedi#Complete
