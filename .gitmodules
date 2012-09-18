@@ -1,6 +1,3 @@
-[submodule ".vim/bundle/jedi"]
-	path = .vim/bundle/jedi
-	url = https://github.com/davidhalter/jedi.git
 [submodule ".vim/bundle/vim-latex"]
 	path = .vim/bundle/vim-latex
 	url = git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex
@@ -22,3 +19,6 @@
 [submodule ".vim/bundle/vim-flake8"]
 	path = .vim/bundle/vim-flake8
 	url = git://github.com/nvie/vim-flake8.git
+[submodule ".vim/bundle/jedi-vim"]
+	path = .vim/bundle/jedi-vim
+	url = git://github.com/davidhalter/jedi-vim.git

@@ -94,7 +94,7 @@ let g:flake8_ignore=""
 let g:flake8_max_line_length="99"
 
 " Configure tab completion
-au FileType python set omnifunc=jedi#Complete
+au FileType python set omnifunc=jedi#complete
 let g:SuperTabDefaultCompletionType = "context"
 set completeopt=menuone,longest,preview
 
