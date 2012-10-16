@@ -22,6 +22,8 @@ syntax on
 " Custom highlighting colors
 hi Folded ctermbg=17
 hi Folded ctermfg=159
+hi CursorLine cterm=none ctermbg=236
+hi ColorColumn cterm=none ctermbg=236
 
 " Map leader key
 let mapleader = ","
@@ -52,6 +54,7 @@ set nu              " Line numbers
 set nowrap          " No line breaks
 set incsearch       " Enable incremental search
 set hlsearch        " Highlight search results
+set cursorline      " Highlight the current line
 set backspace=2     " Allow backspacing over everything
 set hidden          " Better support to put buffers in the background
 set scrolloff=3     " Scroll 3 lines before reaching the current viewport end
