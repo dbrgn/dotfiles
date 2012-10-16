@@ -120,9 +120,7 @@ On_IWhite='\e[0;107m'   # White
 
 # Custom PS1 containing the current git branch
 if command_exists __git_ps1; then
-    #export PS1="[\u@\h \W\$ "
     export PS1="\$(__git_ps1 \"[\[$BIRed\]%s\[$Color_Off\]] \")\[$BIGreen\]\u@\h\[$Color_Off\]:\[$BIBlue\]\w\[$Color_Off\]\$ "
 else
-    echo 'gitps1 exists not'
     export PS1="[\u@\h \W]\$ "
 fi
