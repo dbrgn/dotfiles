@@ -1,0 +1,51 @@
+# Check for an interactive session
+[ -z "$PS1" ] && return
+
+# Function to check whether a command exists or not
+command_exists() { ! command -v "$1" >/dev/null 2>&1 ; }
+
+# Custom PS1 containing the current git branch
+if command_exists __git_ps1; then
+    export PS1="[\u@\h \W\$(__git_ps1 \"/%s\")]\$ "
+else
+    export PS1="[\u@\h \W]\$ "
+fi
+
+# Environment variables
+export EDITOR="vim"            # Use vim as default editor
+export PACMAN="pacman-color"   # Use colored version of pacman
+export LC_CTYPE="en_US.UTF-8"  # Fix some locale issues
+
+# Aliases
+alias vim="vim -p"
+alias ls="ls --color=auto"
+
+# Git shortcuts
+alias gits="git status"
+alias gita="git add"
+alias gitc="git commit"
+alias gitco="git checkout"
+alias gitd="git diff"
+alias gitp="git push"
+alias gitl="git log"
+alias gitvim="vim -p \$(git status --short | awk '\$1 ~ /^M$/ {print \$2}')"
+function git_is_merged() {
+    revlist=$(git rev-list -1 $1 --not $2)
+    if [ $? -eq 0 ]; then
+        if [ "$revlist" = "" ]; then
+            echo "$1 IS merged into $2."
+        else
+            echo "$1 is NOT merged into $2."
+        fi
+    fi
+}
+
+# Create dir and cd into it
+function mkcd() { mkdir -p "$1" && cd "$1"; }
+
+# List directory contents after cd
+function cd() { builtin cd -- "$@" && { [ "$PS1" = "" ] || ls -hrt --color; }; }
+
+# Includes
+if [ -f /usr/bin/virtualenvwrapper.sh ] ; then source /usr/bin/virtualenvwrapper.sh ; fi
+if [ -f /etc/bash_completion.d/git ] ; then source /etc/bash_completion.d/git ; fi

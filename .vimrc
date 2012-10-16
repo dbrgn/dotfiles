@@ -86,7 +86,6 @@ command! Wq  wq
 command! WQ  wq
 
 
-
 """ Plugin settings
 
 " Don't use pyflakes quickfix feature
