@@ -16,8 +16,13 @@ Contains many tools for Python development.
 
  1. ln -s ~/.dotfiles/.vim ~
  2. ln -s ~/.dotfiles/.vimrc ~
- 3. cd ~/.vim
 
 ### Requirements
 
  * vim compiled with Python and Ruby support
+
+## Bash
+
+To use `.bashrc.local`, source it in your regular `.bashrc`:
+
+    source ~/.dotfiles/.bashrc.local
