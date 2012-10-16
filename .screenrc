@@ -1,0 +1,8 @@
+# Don't show the copyright page
+startup_message off
+
+# Disable visual bell (uses audible bell instead)
+vbell off
+
+# Keep scrollback n lines
+defscrollback 1000

@@ -26,3 +26,7 @@ Contains many tools for Python development.
 To use `.bashrc.local`, source it in your regular `.bashrc`:
 
     source ~/.dotfiles/.bashrc.local
+
+## Screen
+
+ 1. ln -s ~/.dotfiles/.screenrc ~
