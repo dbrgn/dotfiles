@@ -5,13 +5,30 @@
 command_exists() { command -v "$1" >/dev/null 2>&1 ; }
 
 # Environment variables
-export EDITOR="vim"            # Use vim as default editor
-export PACMAN="pacman-color"   # Use colored version of pacman
-export LC_CTYPE="en_US.UTF-8"  # Fix some locale issues
+export EDITOR="vim"                 # Use vim as default editor
+export PACMAN="pacman-color"        # Use colored version of pacman
+export LC_CTYPE="en_US.UTF-8"       # Fix some locale issues
+export LESSHISTFILE="-"             # Don't create a less history file
+
+# Colors
+export GREP_OPTIONS="--color=auto"
+export GREP_COLOR="1;32"
+export LESS_TERMCAP_mb=$'\e[1;37m'
+export LESS_TERMCAP_md=$'\e[1;37m'
+export LESS_TERMCAP_me=$'\e[0m'
+export LESS_TERMCAP_se=$'\e[0m'
+export LESS_TERMCAP_so=$'\e[1;47;30m'
+export LESS_TERMCAP_ue=$'\e[0m'
+export LESS_TERMCAP_us=$'\e[0;32m'
+function env() { exec /usr/bin/env "$@" | grep -v ^LESS_TERMCAP_ ; }
 
 # Aliases
+alias ..="cd .."
+alias ...="cd ../.."
 alias vim="vim -p"
 alias ls="ls --color=auto"
+alias o="xdg-open"
+alias please="sudo"
 
 # Git shortcuts
 alias gits="git status"
