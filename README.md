@@ -16,10 +16,15 @@ Contains many tools for Python development.
 
  1. ln -s ~/.dotfiles/.vim ~
  2. ln -s ~/.dotfiles/.vimrc ~
+ 3. vim +BundleInstall +
+ 4. cd ~/.dotfiles/.vim/bundle/Command-T/ruby/command-t/
+ 5. ruby extconf.rb
+ 6. make
 
 ### Requirements
 
  * vim compiled with Python and Ruby support
+ * C compiler (to build command-t extensions)
 
 ## Bash
 

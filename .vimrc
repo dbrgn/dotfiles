@@ -1,10 +1,8 @@
-" Enable pathogen to autoload all bundled plugins
-filetype off
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
-
 " Use Vim defaults instead of 100% vi compatibility 
 set nocompatible
+
+" Temporarily disable filetype plugin
+filetype off
 
 " Jump to the last position when reopening a file
 if has("autocmd")
@@ -12,7 +10,23 @@ if has("autocmd")
     \| exe "normal g'\"" | endif
 endif
 
-" Enable filetype plugin
+" Enable vundle to load plugins
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" Let vundle manage vundle
+Bundle 'gmarik/vundle'
+
+" Custom bundles
+Bundle 'vim-flake8'
+Bundle 'Command-T'
+Bundle 'fs111/pydoc.vim'
+Bundle 'ervandew/supertab'
+Bundle 'groenewege/vim-less'
+Bundle 'jcf/vim-latex'
+Bundle 'davidhalter/jedi-vim'
+
+" Re-enable filetype plugin
 filetype indent plugin on
 
 " Syntax-highlighting
@@ -99,10 +113,6 @@ let g:flake8_max_line_length="99"
 au FileType python set omnifunc=jedi#complete
 let g:SuperTabDefaultCompletionType = "context"
 set completeopt=menuone,longest,preview
-
-" Map rope commands
-map <leader>j :RopeGotoDefinition<CR>
-map <leader>r :RopeRename<CR>
 
 " Grep will sometimes skip displaying the file name if you search
 " in a singe file. This will confuse Latex-Suite. Set your grep
