@@ -12,7 +12,7 @@ Contains many tools for Python development.
 ### Requirements
 
  * vim compiled with Python and Ruby support
- * C compiler (to build command-t extensions)
+ * C compiler and Ruby (to build command-t extensions)
 
 ### Setup
 
