@@ -2,7 +2,7 @@ My personal configuration files.
 
 ## Setup
 
-    git clone git://github.com/gwrtheyrn/dotfiles.git ~/.dotfiles
+    git clone git@github.com:gwrtheyrn/dotfiles.git ~/.dotfiles
 
 
 ## Vim
