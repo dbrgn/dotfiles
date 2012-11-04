@@ -127,6 +127,9 @@ let g:tex_flavor='latex'
 " Compile latex and restart mupdf
 map <leader>l :w<CR> :!rubber -m pdftex % && killall -HUP mupdf<CR><CR>
 
+" Run make
+map <leader>m :w<CR> :!make<CR><CR>
+
 " Configure Command-T behavior
 let g:CommandTAcceptSelectionTabMap='<CR>'
 let g:CommandTAcceptSelectionSplitMap='<C-CR>'
