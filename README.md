@@ -26,6 +26,10 @@ Setup vundle
     git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
     vim +BundleInstall +qall
 
+Update vundle
+
+    vim +BundleInstall! +qall
+
 Configure command-t
 
     cd ~/.vim/bundle/Command-T/ruby/command-t/
