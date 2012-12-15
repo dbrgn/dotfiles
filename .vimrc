@@ -89,6 +89,7 @@ map <C-l> <C-w>>
 
 " Toggle whitespace with ,s
 set listchars=tab:>-,trail:·,eol:$
+set pastetoggle=<F3>
 nmap <silent> <leader>s :set nolist!<CR>
 map <C-j> 5j
 map <C-k> 5k
@@ -112,7 +113,7 @@ let g:flake8_max_line_length="99"
 " Configure tab completion
 au FileType python set omnifunc=jedi#complete
 let g:SuperTabDefaultCompletionType = "context"
-set completeopt=menuone,longest,preview
+set completeopt=menuone,preview
 
 " Grep will sometimes skip displaying the file name if you search
 " in a singe file. This will confuse Latex-Suite. Set your grep
