@@ -59,6 +59,7 @@ function cd() { builtin cd -- "$@" && { [ "$PS1" = "" ] || ls -hrt --color; }; }
 # Includes
 if [ -f /usr/bin/virtualenvwrapper.sh ] ; then source /usr/bin/virtualenvwrapper.sh ; fi
 if [ -f /etc/bash_completion.d/git ] ; then source /etc/bash_completion.d/git ; fi
+if [ -f /usr/share/git/git-prompt.sh ] ; then source /usr/share/git/git-prompt.sh ; fi
 
 # ANSI Escape Codes
 
@@ -135,9 +136,12 @@ On_IPurple='\e[10;95m'  # Purple
 On_ICyan='\e[0;106m'    # Cyan
 On_IWhite='\e[0;107m'   # White
 
-# Custom PS1 containing the current git branch
+# Custom PS1 containing the current git branch and rvm gemset
 if command_exists __git_ps1; then
     export PS1="\$(__git_ps1 \"[\[$BIRed\]%s\[$Color_Off\]] \")\[$BIGreen\]\u@\h\[$Color_Off\]:\[$BIBlue\]\W\[$Color_Off\]\$ "
 else
     export PS1="[\u@\h \W]\$ "
+fi
+if command_exists rvm; then
+    export PS1="\$(rvm-prompt | awk -F'@' '{if (\$2) print \"{\"\$2\"}\"}')$PS1"
 fi
