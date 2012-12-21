@@ -138,7 +138,7 @@ On_IWhite='\e[0;107m'   # White
 
 # Custom PS1 containing the current git branch and rvm gemset
 if command_exists __git_ps1; then
-    export PS1="\$(__git_ps1 \"[\[$BIRed\]%s\[$Color_Off\]] \")\[$BIGreen\]\u@\h\[$Color_Off\]:\[$BIBlue\]\W\[$Color_Off\]\$ "
+    export PS1="\$(__git_ps1 \"[\[$BIRed\]%s\[$Color_Off\]]\")\[$BIGreen\]\u@\h\[$Color_Off\]:\[$BIBlue\]\W\[$Color_Off\]\$ "
 else
     export PS1="[\u@\h \W]\$ "
 fi
