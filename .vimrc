@@ -25,6 +25,7 @@ Bundle 'ervandew/supertab'
 Bundle 'groenewege/vim-less'
 Bundle 'jcf/vim-latex'
 Bundle 'davidhalter/jedi-vim'
+Bundle 'rubycomplete.vim'
 
 " Re-enable filetype plugin
 filetype indent plugin on
@@ -112,6 +113,10 @@ let g:flake8_max_line_length="99"
 
 " Configure tab completion
 au FileType python set omnifunc=jedi#complete
+au FileType ruby,eruby set omnifunc=rubycomplete#Complete
+au FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
+au FileType ruby,eruby let g:rubycomplete_rails = 1
+au FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 let g:SuperTabDefaultCompletionType = "context"
 set completeopt=menuone,preview
 
