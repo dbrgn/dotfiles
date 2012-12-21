@@ -1,0 +1,17 @@
+"volcontrol down && sh /home/danilo/.xsetroot"
+    m:0x0 + c:122
+
+"volcontrol up && sh /home/danilo/.xsetroot"
+    m:0x0 + c:123
+
+"volcontrol mute && sh /home/danilo/.xsetroot"
+    m:0x0 + c:121
+    XF86AudioMute
+
+"uxterm calc"
+    m:0x0 + c:148
+    XF86Calculator
+
+"thunar"
+    m:0x0 + c:180
+    XF86HomePage

@@ -44,6 +44,16 @@ To use `.bashrc.local`, source it in your regular `.bashrc`:
     source ~/.dotfiles/.bashrc.local
 
 
-## Screen
+## Other config files
 
+    # screen
     ln -s ~/.dotfiles/.screenrc ~
+
+    # xresources
+    ln -s ~/.dotfiles/.Xresources ~
+
+    # xbindkeys
+    ln -s ~/.dotfiles/.xbindkeysrc ~
+
+    # xmodmap
+    ln -s ~/.dotfiles/.Xmodmap ~
