@@ -90,8 +90,15 @@ map <C-l> <C-w>>
 
 " Toggle whitespace with ,s
 set listchars=tab:>-,trail:·,eol:$
+nmap <silent> <leader>w :set nolist!<CR>
+
+" Toggle line numbers with ,n
+nmap <silent> <leader>n :set nonu!<CR>
+
+" Toggle paste mode with F3
 set pastetoggle=<F3>
-nmap <silent> <leader>s :set nolist!<CR>
+
+" Faster up/down movement
 map <C-j> 5j
 map <C-k> 5k
 
