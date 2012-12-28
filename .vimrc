@@ -125,7 +125,7 @@ au FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
 au FileType ruby,eruby let g:rubycomplete_rails = 1
 au FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 let g:SuperTabDefaultCompletionType = "context"
-set completeopt=menuone,preview
+set completeopt=menuone,longest,preview
 
 " Grep will sometimes skip displaying the file name if you search
 " in a singe file. This will confuse Latex-Suite. Set your grep
