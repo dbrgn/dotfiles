@@ -14,18 +14,38 @@ endif
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+
+
 " Let vundle manage vundle
 Bundle 'gmarik/vundle'
 
-" Custom bundles
-Bundle 'vim-flake8'
+" Command-T
 Bundle 'Command-T'
-Bundle 'fs111/pydoc.vim'
+
+" Supertab
 Bundle 'ervandew/supertab'
+
+" Snipmate
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "honza/snipmate-snippets"
+Bundle "garbas/vim-snipmate"
+
+" Python plugins
+Bundle 'vim-flake8'
+Bundle 'fs111/pydoc.vim'
+
+" Support for less syntax highlighting
 Bundle 'groenewege/vim-less'
+
+" LaTeX support
 Bundle 'jcf/vim-latex'
+
+" Autocompletion
 Bundle 'davidhalter/jedi-vim'
 Bundle 'rubycomplete.vim'
+
+
 
 " Re-enable filetype plugin
 filetype indent plugin on
@@ -146,3 +166,6 @@ map <leader>m :w<CR> :!make<CR><CR>
 " Configure Command-T behavior
 let g:CommandTAcceptSelectionTabMap='<CR>'
 let g:CommandTAcceptSelectionSplitMap='<C-CR>'
+
+" Configure snipmate
+let g:snips_author='Danilo Bargen'
