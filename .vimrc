@@ -45,6 +45,9 @@ Bundle 'jcf/vim-latex'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'rubycomplete.vim'
 
+" Enhanced status line
+Bundle 'Lokaltog/powerline'
+
 
 
 " Re-enable filetype plugin
@@ -169,3 +172,6 @@ let g:CommandTAcceptSelectionSplitMap='<C-CR>'
 
 " Configure snipmate
 let g:snips_author='Danilo Bargen'
+
+" Powerline
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim

@@ -2,5 +2,5 @@ UXTerm*eightBitInput: false
 UXTerm*metaSendsEscape: true
 UXTerm*reverseVideo: true
 UXTerm*bellIsUrgent: true
-UXTerm*faceName: Terminus
+UXTerm*faceName: DejaVu Sans Mono for Powerline
 UXTerm*faceSize: 7
