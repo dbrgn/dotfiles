@@ -29,6 +29,7 @@ alias vim="vim -p"
 alias ls="ls --color=auto"
 alias o="xdg-open"
 alias please="sudo"
+alias rtfm="man"
 
 # Git shortcuts
 alias gits="git status"
