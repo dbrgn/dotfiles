@@ -29,7 +29,7 @@ Bundle 'ervandew/supertab'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
 Bundle 'honza/snipmate-snippets'
-Bundle 'garbas/vim-snipmate'
+Bundle 'davidhalter/vim-snipmate'
 
 " Python plugins
 Bundle 'vim-flake8'
@@ -163,6 +163,7 @@ let g:CommandTAcceptSelectionSplitMap='<C-CR>'
 
 " Configure snipmate
 let g:snips_author='Danilo Bargen'
+let g:snipMateAllowMatchingDot = 0
 
 " Powerline
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
