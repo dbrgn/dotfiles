@@ -22,9 +22,6 @@ Bundle 'gmarik/vundle'
 " Command-T
 Bundle 'Command-T'
 
-" Supertab
-Bundle 'ervandew/supertab'
-
 " Snipmate
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
@@ -39,8 +36,7 @@ Bundle 'fs111/pydoc.vim'
 Bundle 'groenewege/vim-less'
 
 " Autocompletion
-Bundle 'davidhalter/jedi-vim'
-Bundle 'rubycomplete.vim'
+Bundle 'Valloric/YouCompleteMe'
 
 " Zen coding
 Bundle 'mattn/zencoding-vim'
@@ -142,21 +138,12 @@ command! WQ  wq
 let g:pyflakes_use_quickfix = 0
 
 " Configure flake8
-let g:flake8_ignore="E126,E127,E128"
-let g:flake8_max_line_length="99"
-
-" Configure tab completion
-au FileType python set omnifunc=jedi#complete
-au FileType ruby,eruby set omnifunc=rubycomplete#Complete
-au FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
-au FileType ruby,eruby let g:rubycomplete_rails = 1
-au FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
-let g:SuperTabDefaultCompletionType = "context"
-set completeopt=menuone,longest,preview
+let g:flake8_ignore = "E126,E127,E128"
+let g:flake8_max_line_length = "99"
 
 " Starting with Vim 7, the filetype of empty .tex files defaults to 'plaintex'
 " instead of 'tex'. The following changes the default filetype back to 'tex'
-let g:tex_flavor='latex'
+let g:tex_flavor = 'latex'
 
 " Compile latex and restart mupdf
 map <leader>l :w<CR> :!rubber -m pdftex % && killall -HUP mupdf<CR><CR>
@@ -165,12 +152,15 @@ map <leader>l :w<CR> :!rubber -m pdftex % && killall -HUP mupdf<CR><CR>
 map <leader>m :w<CR> :!make<CR><CR>
 
 " Configure Command-T behavior
-let g:CommandTAcceptSelectionTabMap='<CR>'
-let g:CommandTAcceptSelectionSplitMap='<C-CR>'
+let g:CommandTAcceptSelectionTabMap = '<CR>'
+let g:CommandTAcceptSelectionSplitMap = '<C-CR>'
 
 " Configure snipmate
-let g:snips_author='Danilo Bargen'
+let g:snips_author = 'Danilo Bargen'
 let g:snipMateAllowMatchingDot = 0
+
+" Configure YCM
+let g:ycm_autoclose_preview_window_after_completion=1
 
 " Configure GTK syntax highlighting
 let glib_deprecated_errors = 1

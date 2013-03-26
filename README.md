@@ -13,6 +13,8 @@ Contains many tools for Python development.
 
  * vim compiled with Python and Ruby support
  * C compiler and Ruby (to build command-t extensions)
+ * C++ compiler and Python headers
+ * Jedi (https://github.com/davidhalter/jedi)
 
 ### Setup
 
@@ -35,6 +37,11 @@ Configure command-t
     cd ~/.vim/bundle/Command-T/ruby/command-t/
     ruby extconf.rb
     make
+
+Configure YCM
+
+    cd ~/.vim/bundle/YouCompleteMe/
+    ./install.sh --clang-comp
 
 
 ## Bash
