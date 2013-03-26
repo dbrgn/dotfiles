@@ -142,7 +142,7 @@ command! WQ  wq
 let g:pyflakes_use_quickfix = 0
 
 " Configure flake8
-let g:flake8_ignore=""
+let g:flake8_ignore="E126,E127,E128"
 let g:flake8_max_line_length="99"
 
 " Configure tab completion
