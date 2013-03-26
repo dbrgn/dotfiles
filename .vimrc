@@ -90,7 +90,7 @@ set showmode        " Display current editing mode
 set title           " Make the window title reflect the file being edited
 set showmatch       " Show matching brackets.
 set ignorecase      " Do case insensitive matching
-set history=1000    " Set history to 1000 entries
+set history=2000    " Set history to 2000 entries
 set nu              " Line numbers
 set nowrap          " No line breaks
 set incsearch       " Enable incremental search
@@ -101,6 +101,7 @@ set hidden          " Better support to put buffers in the background
 set scrolloff=3     " Scroll 3 lines before reaching the current viewport end
 set foldmethod=marker " Use markers for folding
 set tabpagemax=50   " Max tabs for vim -p
+set modeline        " Use modeline
 
 " Tab shortcuts
 map <C-n> :tabn<Enter>
