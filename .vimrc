@@ -26,10 +26,10 @@ Bundle 'Command-T'
 Bundle 'ervandew/supertab'
 
 " Snipmate
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "honza/snipmate-snippets"
-Bundle "garbas/vim-snipmate"
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'tomtom/tlib_vim'
+Bundle 'honza/snipmate-snippets'
+Bundle 'garbas/vim-snipmate'
 
 " Python plugins
 Bundle 'vim-flake8'
@@ -37,9 +37,6 @@ Bundle 'fs111/pydoc.vim'
 
 " Support for less syntax highlighting
 Bundle 'groenewege/vim-less'
-
-" LaTeX support
-Bundle 'jcf/vim-latex'
 
 " Autocompletion
 Bundle 'davidhalter/jedi-vim'
@@ -150,14 +147,8 @@ au FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 let g:SuperTabDefaultCompletionType = "context"
 set completeopt=menuone,longest,preview
 
-" Grep will sometimes skip displaying the file name if you search
-" in a singe file. This will confuse Latex-Suite. Set your grep
-" program to always generate a file-name.
-set grepprg=grep\ -nH\ $*
-
-" Starting with Vim 7, the filetype of empty .tex files defaults to
-" 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
-" The following changes the default filetype back to 'tex'
+" Starting with Vim 7, the filetype of empty .tex files defaults to 'plaintex'
+" instead of 'tex'. The following changes the default filetype back to 'tex'
 let g:tex_flavor='latex'
 
 " Compile latex and restart mupdf
