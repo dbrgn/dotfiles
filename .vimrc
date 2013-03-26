@@ -42,6 +42,9 @@ Bundle 'groenewege/vim-less'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'rubycomplete.vim'
 
+" Zen coding
+Bundle 'mattn/zencoding-vim'
+
 " C/C++ bundles
 Bundle 'gtk-vim-syntax'
 
