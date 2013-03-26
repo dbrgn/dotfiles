@@ -4,9 +4,8 @@ set shiftwidth=2
 set softtabstop=2
 set noexpandtab
 
+" Set textwidth
 set textwidth=80
 
-" TIP: if you write your \label's as \label{fig:something}, then if you
-" type in \ref{fig: and press <C-n> you will automatically cycle through
-" all the figure labels. Very useful!
-set iskeyword+=:
+" Diable folding
+set nofoldenable
