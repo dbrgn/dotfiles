@@ -42,6 +42,9 @@ Bundle 'groenewege/vim-less'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'rubycomplete.vim'
 
+" C/C++ bundles
+Bundle 'gtk-vim-syntax'
+
 " Enhanced status line
 Bundle 'Lokaltog/powerline'
 
@@ -164,6 +167,9 @@ let g:CommandTAcceptSelectionSplitMap='<C-CR>'
 " Configure snipmate
 let g:snips_author='Danilo Bargen'
 let g:snipMateAllowMatchingDot = 0
+
+" Configure GTK syntax highlighting
+let glib_deprecated_errors = 1
 
 " Powerline
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
