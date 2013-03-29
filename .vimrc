@@ -22,11 +22,11 @@ Bundle 'gmarik/vundle'
 " Command-T
 Bundle 'Command-T'
 
-" Snipmate
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'tomtom/tlib_vim'
-Bundle 'honza/snipmate-snippets'
-Bundle 'davidhalter/vim-snipmate'
+" Ultisnips
+Bundle 'SirVer/ultisnips'
+
+" Autocompletion
+Bundle 'Valloric/YouCompleteMe'
 
 " Python plugins
 Bundle 'vim-flake8'
@@ -34,9 +34,6 @@ Bundle 'fs111/pydoc.vim'
 
 " Support for less syntax highlighting
 Bundle 'groenewege/vim-less'
-
-" Autocompletion
-Bundle 'Valloric/YouCompleteMe'
 
 " Zen coding
 Bundle 'mattn/zencoding-vim'
@@ -152,15 +149,15 @@ map <leader>l :w<CR> :!rubber -m pdftex % && killall -HUP mupdf<CR><CR>
 map <leader>m :w<CR> :!make<CR><CR>
 
 " Configure Command-T behavior
-let g:CommandTAcceptSelectionTabMap = '<CR>'
-let g:CommandTAcceptSelectionSplitMap = '<C-CR>'
-
-" Configure snipmate
-let g:snips_author = 'Danilo Bargen'
-let g:snipMateAllowMatchingDot = 0
+let g:CommandTAcceptSelectionTabMap = "<CR>"
+let g:CommandTAcceptSelectionSplitMap = "<C-CR>"
 
 " Configure YCM
 let g:ycm_autoclose_preview_window_after_completion=1
+
+" Configure UltiSnips
+let g:UltiSnipsExpandTrigger = "<C-x>"
+let g:UltiSnipsListSnippets = "<C-l>"
 
 " Configure GTK syntax highlighting
 let glib_deprecated_errors = 1
