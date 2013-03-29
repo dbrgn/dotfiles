@@ -1,6 +1,9 @@
 " Use Vim defaults instead of 100% vi compatibility 
 set nocompatible
 
+" Fix issues with colors
+set term=xterm-256color
+
 " Temporarily disable filetype plugin
 filetype off
 
