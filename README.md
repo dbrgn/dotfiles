@@ -23,6 +23,12 @@ Create symlinks
     ln -s ~/.dotfiles/.vim ~
     ln -s ~/.dotfiles/.vimrc ~
 
+Copy and install powerline fonts
+
+    mkdir -p ~/.fonts/truetype/
+    cp ~/.dotfiles/fonts/*.ttf ~/.fonts/truetype/
+    fc-cache -fv ~/.fonts
+
 Setup vundle
 
     git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
