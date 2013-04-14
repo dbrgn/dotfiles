@@ -28,8 +28,12 @@ Bundle 'Command-T'
 " Ultisnips
 Bundle 'SirVer/ultisnips'
 
-" Autocompletion
+" Autocompletion (YCM)
 Bundle 'Valloric/YouCompleteMe'
+
+" Autocompletion (Supertab/Jedi)
+"Bundle 'ervandew/supertab'
+"Bundle 'davidhalter/jedi-vim'
 
 " Python plugins
 Bundle 'vim-flake8'
@@ -157,6 +161,11 @@ let g:CommandTAcceptSelectionSplitMap = "<C-CR>"
 
 " Configure YCM
 let g:ycm_autoclose_preview_window_after_completion=1
+
+" Configure Supertab / Jedi
+" au FileType python set omnifunc=jedi#complete
+" let g:SuperTabDefaultCompletionType = "context"
+" set completeopt=menuone,longest,preview
 
 " Configure UltiSnips
 let g:UltiSnipsExpandTrigger = "<C-x>"
