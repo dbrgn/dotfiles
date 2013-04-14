@@ -30,6 +30,7 @@ alias ls="ls --color=auto"
 alias o="xdg-open"
 alias please="sudo"
 alias rtfm="man"
+alias pyclean="find . -name '*.pyc' -delete"
 
 # Git shortcuts
 alias gits="git status"
