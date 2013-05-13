@@ -12,8 +12,8 @@ Contains many tools for Python development.
 ### Requirements
 
  * vim compiled with Python and Ruby support
- * C compiler and Ruby (to build command-t extensions)
- * C++ compiler and Python headers
+ * C compiler and ruby-dev (to build command-t extensions)
+ * C++ compiler and python-dev
  * Jedi (https://github.com/davidhalter/jedi)
 
 ### Setup
