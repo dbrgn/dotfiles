@@ -11,9 +11,9 @@ Contains many tools for Python development.
 
 ### Requirements
 
- * vim compiled with Python and Ruby support
- * C compiler and ruby-dev (to build command-t extensions)
- * C++ compiler and python-dev
+ * vim compiled with python and ruby support
+ * C compiler, ruby and ruby-dev (to build command-t extensions)
+ * C++ compiler and python headers
  * Jedi (https://github.com/davidhalter/jedi)
 
 ### Setup
@@ -47,7 +47,7 @@ Configure command-t
 Configure YCM
 
     cd ~/.vim/bundle/YouCompleteMe/
-    ./install.sh --clang-comp
+    ./install.sh --clang-completer
 
 
 ## Bash
