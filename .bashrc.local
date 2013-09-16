@@ -1,6 +1,11 @@
 # Check for an interactive session
 [ -z "$PS1" ] && return
 
+# Includes
+if [ -f /usr/bin/virtualenvwrapper.sh ] ; then source /usr/bin/virtualenvwrapper.sh ; fi
+if [ -f /etc/bash_completion.d/git ] ; then source /etc/bash_completion.d/git ; fi
+if [ -f /usr/share/git/git-prompt.sh ] ; then source /usr/share/git/git-prompt.sh ; fi
+
 # Function to check whether a command exists or not
 command_exists() { command -v "$1" >/dev/null 2>&1 ; }
 
@@ -56,11 +61,6 @@ function mkcd() { mkdir -p "$1" && cd "$1"; }
 
 # List directory contents after cd
 function cd() { builtin cd -- "$@" && { [ "$PS1" = "" ] || ls -hrt --color; }; }
-
-# Includes
-if [ -f /usr/bin/virtualenvwrapper.sh ] ; then source /usr/bin/virtualenvwrapper.sh ; fi
-if [ -f /etc/bash_completion.d/git ] ; then source /etc/bash_completion.d/git ; fi
-if [ -f /usr/share/git/git-prompt.sh ] ; then source /usr/share/git/git-prompt.sh ; fi
 
 # ANSI Escape Codes
 
