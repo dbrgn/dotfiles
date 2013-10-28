@@ -57,6 +57,11 @@ To use `.bashrc.local`, source it in your regular `.bashrc`:
     source ~/.dotfiles/.bashrc.local
 
 
+## Systemd Services
+
+    sudo ln -s $(readlink -f services/slock.service) /etc/systemd/system/
+    sudo ln -s $(readlink -f services/xmodmap.service.service) /etc/systemd/system/
+
 ## Other config files
 
     # screen
