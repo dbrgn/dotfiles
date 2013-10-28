@@ -59,8 +59,10 @@ To use `.bashrc.local`, source it in your regular `.bashrc`:
 
 ## Systemd Services
 
-    sudo ln -s $(readlink -f services/slock.service) /etc/systemd/system/
-    sudo ln -s $(readlink -f services/xmodmap.service.service) /etc/systemd/system/
+    sudo cp services/slock.service /etc/systemd/system/
+    sudo cp services/xmodmap.service /etc/systemd/system/
+    sudo cp services/xkbmap-ch.service /etc/systemd/system/
+    sudo systemctl enable slock xmodmap xkbmap-ch
 
 ## Other config files
 
