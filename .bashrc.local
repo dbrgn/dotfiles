@@ -34,7 +34,7 @@ alias ls="ls --color=auto"
 alias o="xdg-open"
 alias please="sudo"
 alias rtfm="man"
-alias pyclean="find . -name '*.pyc' -delete"
+alias pyclean="find . -name '*.pyc' -delete && find . -name __pycache__ -delete"
 
 # Git shortcuts
 alias gits="git status"
