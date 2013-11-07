@@ -2,9 +2,10 @@
 Description=Set the xkbmap to Swiss German.
 
 [Service]
+Type=simple
 User=danilo
 Environment=DISPLAY=:0
-ExecStart=/usr/bin/setxkbmap ch
+ExecStart=/usr/bin/sleep 1; /usr/bin/setxkbmap ch
 
 [Install]
 WantedBy=resume.target

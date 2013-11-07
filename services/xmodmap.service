@@ -2,9 +2,10 @@
 Description=Load the xmodmap config file.
 
 [Service]
+Type=simple
 User=danilo
 Environment=DISPLAY=:0
-ExecStart=/usr/bin/xmodmap /home/danilo/.Xmodmap
+ExecStart=/usr/bin/sleep 1; /usr/bin/xmodmap /home/danilo/.Xmodmap
 
 [Install]
 WantedBy=resume.target
