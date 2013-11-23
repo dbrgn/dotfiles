@@ -43,7 +43,7 @@ Bundle 'fs111/pydoc.vim'
 Bundle 'groenewege/vim-less'
 
 " Zen coding
-Bundle 'mattn/zencoding-vim'
+Bundle 'mattn/emmet-vim'
 
 " C/C++ bundles
 Bundle 'gtk-vim-syntax'
