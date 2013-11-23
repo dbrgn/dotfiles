@@ -49,6 +49,10 @@ Configure YCM
     cd ~/.vim/bundle/YouCompleteMe/
     ./install.sh --clang-completer
 
+Setup gocode
+
+    go get -u github.com/nsf/gocode
+
 
 ## Bash
 

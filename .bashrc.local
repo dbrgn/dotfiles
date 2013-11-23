@@ -1,6 +1,10 @@
 # Check for an interactive session
 [ -z "$PS1" ] && return
 
+# PATH config
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
 # Includes
 if [ -f /usr/bin/virtualenvwrapper.sh ] ; then source /usr/bin/virtualenvwrapper.sh ; fi
 if [ -f /etc/bash_completion.d/git ] ; then source /etc/bash_completion.d/git ; fi

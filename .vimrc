@@ -48,6 +48,9 @@ Bundle 'mattn/emmet-vim'
 " C/C++ bundles
 Bundle 'gtk-vim-syntax'
 
+" Golang bundle
+Bundle 'Blackrush/vim-gocode'
+
 " Enhanced status line
 Bundle 'Lokaltog/powerline'
 
