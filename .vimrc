@@ -165,6 +165,7 @@ noremap <F5> :CommandTFlush<CR>
 
 " Configure YCM
 let g:ycm_autoclose_preview_window_after_completion=1
+nnoremap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " Configure Supertab / Jedi
 " au FileType python set omnifunc=jedi#complete
