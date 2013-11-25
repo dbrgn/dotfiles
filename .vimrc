@@ -54,6 +54,8 @@ Bundle 'Blackrush/vim-gocode'
 " Enhanced status line
 Bundle 'Lokaltog/powerline'
 
+" Arduino syntax highlighting
+Bundle "sudar/vim-arduino-syntax"
 
 
 " Re-enable filetype plugin
