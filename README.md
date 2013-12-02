@@ -83,3 +83,6 @@ To use `.bashrc.local`, source it in your regular `.bashrc`:
 
     # xmodmap
     ln -s ~/.dotfiles/.Xmodmap ~
+
+    # psql
+    ln -s ~/.dotfiles/.psqlrc ~
