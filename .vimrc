@@ -57,6 +57,9 @@ Bundle 'Lokaltog/powerline'
 " Arduino syntax highlighting
 Bundle "sudar/vim-arduino-syntax"
 
+" Ansible YAML syntax highlighting fixes
+Bundle 'chase/vim-ansible-yaml'
+
 
 " Re-enable filetype plugin
 filetype indent plugin on
