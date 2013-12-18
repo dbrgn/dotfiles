@@ -86,3 +86,6 @@ To use `.bashrc.local`, source it in your regular `.bashrc`:
 
     # psql
     ln -s ~/.dotfiles/.psqlrc ~
+
+    # gtk 2 theme
+    ln -s ~/.dotfiles/.gtkrc-2.0 ~

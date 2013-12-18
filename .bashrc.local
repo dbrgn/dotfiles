@@ -14,9 +14,13 @@ if [ -f /usr/share/git/git-prompt.sh ] ; then source /usr/share/git/git-prompt.s
 command_exists() { command -v "$1" >/dev/null 2>&1 ; }
 
 # Environment variables
-export EDITOR="vim"                 # Use vim as default editor
-export LC_CTYPE="en_US.UTF-8"       # Fix some locale issues
-export LESSHISTFILE="-"             # Don't create a less history file
+export EDITOR="vim"                    # Use vim as default editor
+export LC_CTYPE="en_US.UTF-8"          # Fix some locale issues
+export LESSHISTFILE="-"                # Don't create a less history file
+
+# Ansible
+export ANSIBLE_HOSTS=~/.ansible_hosts
+export ANSIBLE_NOCOWS=1
 
 # Colors
 export GREP_OPTIONS="--color=auto"
