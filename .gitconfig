@@ -1,0 +1,14 @@
+[user]
+	name = Danilo Bargen
+	email = mail@dbrgn.ch
+[color]
+    ui = true
+[github]
+	user = dbrgn
+[alias]
+	lg = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr %an)%Creset' --abbrev-commit --date=relative
+	wdiff = diff --color-words
+[pager]
+	color = true
+[push]
+	default = simple

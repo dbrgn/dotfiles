@@ -89,3 +89,6 @@ To use `.bashrc.local`, source it in your regular `.bashrc`:
 
     # gtk 2 theme
     ln -s ~/.dotfiles/.gtkrc-2.0 ~
+
+    # gitconfig
+    ln -s ~/.dotfiles/.gitconfig ~
