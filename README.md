@@ -1,6 +1,5 @@
 My personal configuration files.
 
-
 ## Setup
 
     git clone git@github.com:dbrgn/dotfiles.git ~/.dotfiles
@@ -10,14 +9,12 @@ My personal configuration files.
 
 Contains many tools for Python development.
 
-
 ### Requirements
 
  * vim compiled with python and ruby support
  * C compiler, ruby and ruby-dev (to build command-t extensions)
  * C++ compiler and python headers
  * Jedi (https://github.com/davidhalter/jedi)
-
 
 ### Setup
 
@@ -72,12 +69,6 @@ To use `.bashrc.local`, source it in your regular `.bashrc`:
     sudo cp services/xkbmap-ch.service /etc/systemd/system/
     sudo systemctl enable slock xautolock xmodmap xkbmap-ch
     sudo systemctl start xautolock xmodmap xkbmap-ch
-
-
-## Udev Rules
-
-    sudo cp udev/* /etc/udev/rules.d/
-
 
 ## Other config files
 
