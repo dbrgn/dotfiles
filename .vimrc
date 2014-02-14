@@ -129,8 +129,6 @@ map <leader>s :w<Enter>
 " Switch split
 map + <C-w>w
 " Change split size
-map <C-j> <C-w>-
-map <C-k> <C-w>+
 map <C-h> <C-w><
 map <C-l> <C-w>>
 
@@ -145,8 +143,8 @@ nmap <silent> <leader>n :set nonu!<CR>
 set pastetoggle=<F3>
 
 " Faster up/down movement
-map <C-j> 5j
-map <C-k> 5k
+map <C-j> 10j
+map <C-k> 10k
 
 " Useful aliases
 command! Q  q
