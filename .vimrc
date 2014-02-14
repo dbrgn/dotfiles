@@ -132,8 +132,12 @@ map + <C-w>w
 map <C-h> <C-w><
 map <C-l> <C-w>>
 
-" Toggle whitespace with ,s
-set listchars=tab:>-,trail:·,eol:$
+" Jump to prev/next quickfix with F6/F8
+map <F6> :cp<CR>
+map <F8> :cn<CR>
+
+" Toggle whitespace with <leader>w
+set listchars=tab:▸\ ,trail:·,eol:$
 nmap <silent> <leader>w :set nolist!<CR>
 
 " Toggle line numbers with ,n
