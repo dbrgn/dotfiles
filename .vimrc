@@ -123,6 +123,9 @@ set modeline        " Use modeline
 map <C-n> :tabn<Enter>
 map <C-p> :tabp<Enter>
 
+" Save shortcut
+map <leader>s :w<Enter>
+
 " Switch split
 map + <C-w>w
 " Change split size
