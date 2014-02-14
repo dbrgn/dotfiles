@@ -157,24 +157,28 @@ command! Wq  wq
 command! WQ  wq
 
 
-""" Plugin settings
-
-" Don't use pyflakes quickfix feature
-let g:pyflakes_use_quickfix = 0
-
-" Configure flake8
-let g:flake8_ignore = "E126,E127,E128"
-let g:flake8_max_line_length = "99"
-
-" Starting with Vim 7, the filetype of empty .tex files defaults to 'plaintex'
-" instead of 'tex'. The following changes the default filetype back to 'tex'
-let g:tex_flavor = 'latex'
+""" External function mappings
 
 " Compile latex and restart mupdf
 map <leader>l :w<CR> :!rubber -m pdftex % && killall -HUP mupdf<CR><CR>
 
 " Run make
 map <leader>m :w<CR> :!make<CR><CR>
+
+
+""" Plugin settings
+
+" Don't use pyflakes quickfix feature
+let g:pyflakes_use_quickfix = 0
+
+" Configure flake8
+let g:flake8_ignore = "E124,E126,E127,E128"
+let g:flake8_max_line_length = "99"
+
+" Starting with Vim 7, the filetype of empty .tex files defaults to 'plaintex'
+" instead of 'tex'. The following changes the default filetype back to 'tex'
+let g:tex_flavor = 'latex'
+
 
 " Configure Command-T behavior
 let g:CommandTAcceptSelectionTabMap = "<CR>"
