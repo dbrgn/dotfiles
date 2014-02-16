@@ -95,6 +95,22 @@ if has("autocmd")
     autocmd FileType javascript setlocal ts=4 sts=4 sw=4 expandtab
 endif
 
+" Strip trailing whitespace automatically
+function! <SID>StripTrailingWhitespaces()
+    " Preparation: save last search, and cursor position.
+    let _s=@/
+    let l = line(".")
+    let c = col(".")
+    " Do the business:
+    %s/\s\+$//e
+    " Clean up: restore previous search history, and cursor position
+    let @/=_s
+    call cursor(l, c)
+endfunction
+if has("autocmd")
+    autocmd BufWritePre *.py,*.js,*.html,*.css :call <SID>StripTrailingWhitespaces()
+endif
+
 " Extended % matching
 runtime macros/matchit.vim
 
