@@ -129,7 +129,7 @@ set incsearch       " Enable incremental search
 set hlsearch        " Highlight search results
 set cursorline      " Highlight the current line
 set backspace=2     " Allow backspacing over everything
-set hidden          " Better support to put buffers in the background
+set nohidden        " Actually delete a buffer when closing a tab
 set scrolloff=3     " Scroll 3 lines before reaching the current viewport end
 set foldmethod=marker " Use markers for folding
 set tabpagemax=50   " Max tabs for vim -p
