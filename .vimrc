@@ -162,6 +162,9 @@ set pastetoggle=<F3>
 map <C-j> 10j
 map <C-k> 10k
 
+" Remap ESC
+imap jk <ESC>
+
 " Useful aliases
 command! Q  q
 command! W  w
