@@ -39,26 +39,20 @@ Bundle 'Valloric/YouCompleteMe'
 Bundle 'vim-flake8'
 Bundle 'fs111/pydoc.vim'
 
-" Support for less syntax highlighting
-Bundle 'groenewege/vim-less'
-
 " Zen coding
 Bundle 'mattn/emmet-vim'
-
-" C/C++ bundles
-Bundle 'gtk-vim-syntax'
-
-" Golang bundle
-Bundle 'Blackrush/vim-gocode'
 
 " Enhanced status line
 Bundle 'Lokaltog/powerline'
 
-" Arduino syntax highlighting
+" Language support
+Bundle 'gtk-vim-syntax'
+Bundle 'Blackrush/vim-gocode'
+Bundle 'groenewege/vim-less'
 Bundle "sudar/vim-arduino-syntax"
-
-" Ansible YAML syntax highlighting fixes
 Bundle 'chase/vim-ansible-yaml'
+Bundle 'tpope/vim-markdown'
+Bundle 'petRUShka/vim-opencl'
 
 
 " Re-enable filetype plugin
