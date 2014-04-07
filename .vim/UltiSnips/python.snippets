@@ -9,3 +9,7 @@ endsnippet
 snippet pprint "Import and use pprint" b
 from pprint import pprint; pprint($1)
 endsnippet
+
+snippet rdb "Import and use rdb" b
+from celery.contrib import rdb; rdb.set_trace()
+endsnippet
