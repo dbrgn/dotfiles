@@ -92,3 +92,6 @@ To use `.bashrc.local`, source it in your regular `.bashrc`:
 
     # gitconfig
     ln -s ~/.dotfiles/.gitconfig ~
+
+    # flake8
+    ln -s ~/.dotfiles/flake8 ~/.config/flake8

@@ -86,29 +86,29 @@ set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
 
 " Language specific tab configuration
 if has("autocmd")
-    autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
+  autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
 
-    autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
-    autocmd FileType python setlocal ts=4 sts=4 sw=4 expandtab
-    autocmd FileType html setlocal ts=4 sts=4 sw=4 expandtab
-    autocmd FileType css setlocal ts=4 sts=4 sw=4 expandtab
-    autocmd FileType javascript setlocal ts=4 sts=4 sw=4 expandtab
+  autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+  autocmd FileType python setlocal ts=4 sts=4 sw=4 expandtab
+  autocmd FileType html setlocal ts=4 sts=4 sw=4 expandtab
+  autocmd FileType css setlocal ts=4 sts=4 sw=4 expandtab
+  autocmd FileType javascript setlocal ts=4 sts=4 sw=4 expandtab
 endif
 
 " Strip trailing whitespace automatically
 function! <SID>StripTrailingWhitespaces()
-    " Preparation: save last search, and cursor position.
-    let _s=@/
-    let l = line(".")
-    let c = col(".")
-    " Do the business:
-    %s/\s\+$//e
-    " Clean up: restore previous search history, and cursor position
-    let @/=_s
-    call cursor(l, c)
+  " Preparation: save last search, and cursor position.
+  let _s=@/
+  let l = line(".")
+  let c = col(".")
+  " Do the business:
+  %s/\s\+$//e
+  " Clean up: restore previous search history, and cursor position
+  let @/=_s
+  call cursor(l, c)
 endfunction
 if has("autocmd")
-    autocmd BufWritePre *.py,*.js,*.html,*.css :call <SID>StripTrailingWhitespaces()
+  autocmd BufWritePre *.py,*.js,*.html,*.css :call <SID>StripTrailingWhitespaces()
 endif
 
 " Extended % matching
@@ -186,10 +186,6 @@ map <leader>m :w<CR> :!make<CR><CR>
 
 " Don't use pyflakes quickfix feature
 let g:pyflakes_use_quickfix = 0
-
-" Configure flake8
-let g:flake8_ignore = "E124,E126,E127,E128"
-let g:flake8_max_line_length = "99"
 
 " Starting with Vim 7, the filetype of empty .tex files defaults to 'plaintex'
 " instead of 'tex'. The following changes the default filetype back to 'tex'
