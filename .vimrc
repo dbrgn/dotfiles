@@ -143,8 +143,10 @@ map <C-h> <C-w><
 map <C-l> <C-w>>
 
 " Jump to prev/next quickfix with F6/F8
-map <F6> :cp<CR>
-map <F8> :cn<CR>
+nmap <F6> :cp<CR>
+imap <F6> <ESC>:cp<CR>
+nmap <F8> :cn<CR>
+imap <F8> <ESC>:cn<CR>
 
 " Toggle whitespace with <leader>w
 set listchars=tab:▸\ ,trail:·,eol:$
