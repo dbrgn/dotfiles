@@ -172,6 +172,13 @@ command! W  w
 command! Wq  wq
 command! WQ  wq
 
+" LaTeX mappings
+
+if has("autocmd")
+  autocmd FileType tex nmap <leader>b lbi\textbf{<ESC>ea}<ESC>
+  autocmd FileType tex nmap <leader>i lbi\textit{<ESC>ea}<ESC>
+endif
+
 
 """ External function mappings
 
