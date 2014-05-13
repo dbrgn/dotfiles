@@ -1,0 +1,3 @@
+--ignore-dir=.idea/
+--ignore-dir=.tox/
+--ignore-dir=VIRTUAL/

@@ -75,6 +75,9 @@ To use `.bashrc.local`, source it in your regular `.bashrc`:
     # screen
     ln -s ~/.dotfiles/.screenrc ~
 
+    # ack
+    ln -s ~/.dotfiles/.ackrc ~
+
     # xresources
     ln -s ~/.dotfiles/.Xresources ~
 
