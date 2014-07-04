@@ -53,6 +53,7 @@ Bundle "sudar/vim-arduino-syntax"
 Bundle 'chase/vim-ansible-yaml'
 Bundle 'tpope/vim-markdown'
 Bundle 'petRUShka/vim-opencl'
+Bundle 'ekalinin/Dockerfile.vim'
 
 
 " Re-enable filetype plugin
