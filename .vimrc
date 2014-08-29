@@ -129,6 +129,7 @@ set scrolloff=3     " Scroll 3 lines before reaching the current viewport end
 set foldmethod=marker " Use markers for folding
 set tabpagemax=50   " Max tabs for vim -p
 set modeline        " Use modeline
+set clipboard=unnamedplus " Use system clipboard
 
 " Tab shortcuts
 map <C-n> :tabn<Enter>
