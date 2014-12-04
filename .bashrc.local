@@ -45,7 +45,9 @@ alias ls="ls --color=auto"
 alias o="xdg-open"
 alias please="sudo"
 alias rtfm="man"
+alias fgfg="fg"
 alias pyclean="find . -type f -iname '*.pyc' -delete && find . -type d -name __pycache__ -delete"
+alias kadse="echo -e '   /\_/\ \n   >^.^<.---.\n  _'\"'\"'-\`-'\"'\"'     )\ \n (6--\ |--\ (\`.\`-.\n     --'\"'\"'  --'\"'\"'  \`\`-'\"'\"''"
 function shorturl() { curl --data "url=$@" http://s.dbrgn.ch/; }
 function urlfile() { chromium `awk -F= '/URL/{ print $2 }' "$1"`; }
 function uptmp() { scp -C "$1" dbrgn.ch:/var/www/dbrgn/tmp/ && echo -n "http://tmp.dbrgn.ch/$1" | tee >(xsel -pi) | tee >(xsel -bi) && echo ""; }
