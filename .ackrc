@@ -2,3 +2,4 @@
 --ignore-dir=.tox/
 --ignore-dir=VIRTUAL/
 --ignore-dir=build/
+--ignore-dir=htmlcov/
