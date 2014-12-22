@@ -207,6 +207,7 @@ noremap <F5> :CommandTFlush<CR>
 
 " Configure YCM
 let g:ycm_autoclose_preview_window_after_completion=1
+let g:ycm_path_to_python_interpreter = '/usr/bin/python2'
 nnoremap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " Configure Supertab / Jedi
