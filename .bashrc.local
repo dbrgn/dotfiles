@@ -84,6 +84,15 @@ function mkcd() { mkdir -p "$1" && cd "$1"; }
 # List directory contents after cd
 function cd() { builtin cd -- "$@" && { [ "$PS1" = "" ] || ls -hrt --color; }; }
 
+# Convert pull request
+function convert-pull-request() {
+    if [ $# -ne 3 ]; then
+        echo "Usage: convert-pull-request <base> <issue-nr> <branch>"
+    else
+        echo "hub pull-request -b $1 -i $2 -h $3"
+    fi
+}
+
 # ANSI Escape Codes
 
 # Reset
