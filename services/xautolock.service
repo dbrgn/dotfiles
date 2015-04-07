@@ -1,11 +1,13 @@
 [Unit]
 Description=Lock the screen automatically after a timeout.
+Requires=display-manager.target
+After=display-manager.target
 
 [Service]
 Type=simple
 User=danilo
 Environment=DISPLAY=:0
-ExecStart=/usr/bin/xautolock -time 10 -locker slock -detectsleep
+ExecStart=/usr/bin/xautolock -time 5 -locker slock -detectsleep
 
 [Install]
 WantedBy=graphical.target
