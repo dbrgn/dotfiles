@@ -53,6 +53,8 @@ alias rs='./manage.py runserver'
 alias sp='./manage.py shell_plus'
 alias cel='celery -A config worker -l info -Q celery,high_prio -O fair'
 alias wn1='watch -n 1'
+alias irc='ssh -t dbrgn.ch "screen -d -r irc"'
+alias vimrc='vim ~/.vimrc'
 function shorturl() { curl --data "url=$@" http://s.dbrgn.ch/; }
 function urlfile() { chromium `awk -F= '/URL/{ print $2 }' "$1"`; }
 function uptmp() { scp -C "$1" dbrgn.ch:/var/www/dbrgn/tmp/ && echo -n "http://tmp.dbrgn.ch/$1" | tee >(xsel -pi) | tee >(xsel -bi) && echo ""; }
