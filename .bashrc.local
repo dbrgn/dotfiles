@@ -89,10 +89,12 @@ function cd() { builtin cd -- "$@" && { [ "$PS1" = "" ] || ls -hrt --color; }; }
 
 # Convert pull request
 function convert-pull-request() {
-    if [ $# -ne 3 ]; then
-        echo "Usage: convert-pull-request <base> <issue-nr> <branch>"
-    else
+    if [ $# -eq 3 ]; then
         echo "hub pull-request -b $1 -i $2 -h $3"
+    elif [ $# -eq 2 ]; then
+        echo "hub pull-request -b $1 -i $2"
+    else
+        echo "Usage: convert-pull-request <base> <issue-nr> [<branch>]"
     fi
 }
 
