@@ -45,6 +45,9 @@ Bundle 'mattn/emmet-vim'
 " Enhanced status line
 Bundle 'Lokaltog/powerline'
 
+" Searching
+Bundle 'mileszs/ack.vim'
+
 " Language support
 Bundle 'gtk-vim-syntax'
 Bundle 'Blackrush/vim-gocode'
@@ -180,6 +183,9 @@ if has("autocmd")
   autocmd FileType tex nmap <leader>b lbi\textbf{<ESC>ea}<ESC>
   autocmd FileType tex nmap <leader>i lbi\textit{<ESC>ea}<ESC>
 endif
+
+" Ack search
+map <leader>a :Ack 
 
 
 """ External function mappings
