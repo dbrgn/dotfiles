@@ -37,6 +37,9 @@ export LESS_TERMCAP_ue=$'\e[0m'
 export LESS_TERMCAP_us=$'\e[0;32m'
 function env() { exec /usr/bin/env "$@" | grep -v ^LESS_TERMCAP_ ; }
 
+# Disable freezing with Ctrl-S
+stty -ixon
+
 # Aliases
 alias ..="cd .."
 alias ...="cd ../.."
