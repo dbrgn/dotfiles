@@ -79,6 +79,11 @@ hi Folded ctermfg=159
 hi CursorLine cterm=none ctermbg=236
 hi ColorColumn cterm=none ctermbg=236
 
+" File extension to filetype matching
+if has("autocmd")
+    autocmd BufNewFile,BufRead,TabEnter *.gs set filetype=javascript
+endif
+
 " Map leader key
 let mapleader = ","
 
