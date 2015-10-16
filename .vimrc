@@ -48,6 +48,12 @@ Bundle 'Lokaltog/powerline'
 " Searching
 Bundle 'mileszs/ack.vim'
 
+" Intensly orgasmic commenting (according to author)
+Bundle 'scrooloose/nerdcommenter'
+
+" Syntax checking
+Bundle 'scrooloose/syntastic'
+
 " Language support
 Bundle 'gtk-vim-syntax'
 Bundle 'Blackrush/vim-gocode'
