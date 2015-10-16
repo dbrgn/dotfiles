@@ -11,8 +11,8 @@ Contains many tools for Python development.
 
 ### Requirements
 
- * vim compiled with python and ruby support
- * C compiler, ruby and ruby-dev (to build command-t extensions)
+ * vim compiled with python support
+ * C compiler
  * C++ compiler and python headers
  * Jedi (https://github.com/davidhalter/jedi)
 
@@ -37,12 +37,6 @@ Setup vundle
 Update vundle
 
     vim +BundleInstall! +qall
-
-Configure command-t
-
-    cd ~/.vim/bundle/Command-T/ruby/command-t/
-    ruby extconf.rb
-    make
 
 Configure YCM
 

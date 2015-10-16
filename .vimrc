@@ -22,8 +22,8 @@ call vundle#rc()
 " Let vundle manage vundle
 Bundle 'gmarik/vundle'
 
-" Command-T
-Bundle 'Command-T'
+" Ctrl-P
+Bundle 'kien/ctrlp.vim'
 
 " Ultisnips
 Bundle 'SirVer/ultisnips'
@@ -207,10 +207,13 @@ let g:pyflakes_use_quickfix = 0
 let g:tex_flavor = 'latex'
 
 
-" Configure Command-T behavior
-let g:CommandTAcceptSelectionTabMap = "<CR>"
-let g:CommandTAcceptSelectionSplitMap = "<C-CR>"
-noremap <F5> :CommandTFlush<CR>
+" Configure CtrlP behavior
+let g:ctrlp_map = '<leader>t'
+let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': ['<c-t>'],
+    \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
+    \ 'MarkToOpen()':         ['<c-z>'],
+\ }
 
 " Configure YCM
 let g:ycm_autoclose_preview_window_after_completion=1
