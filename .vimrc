@@ -243,5 +243,8 @@ let g:UltiSnipsListSnippets = "<C-l>"
 " Configure GTK syntax highlighting
 let glib_deprecated_errors = 1
 
+" Configure Syntastic
+let g:syntastic_javascript_checkers = ['eslint']
+
 " Powerline
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
