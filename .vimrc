@@ -202,6 +202,7 @@ map <leader>a :Ack
 
 " Compile latex and restart mupdf
 map <leader>l :w<CR> :!rubber -m pdftex % && killall -HUP mupdf<CR><CR>
+map <leader>p :!mupdf %:r.pdf &<CR><CR>
 
 " Run make
 map <leader>m :w<CR> :!make<CR><CR>
