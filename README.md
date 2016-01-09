@@ -41,7 +41,7 @@ Update vundle
 Configure YCM
 
     cd ~/.vim/bundle/YouCompleteMe/
-    ./install.sh --clang-completer
+    ./install.sh --racer-completer
 
 Setup gocode
 
