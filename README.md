@@ -92,3 +92,6 @@ To use `.bashrc.local`, source it in your regular `.bashrc`:
 
     # flake8
     ln -s ~/.dotfiles/flake8 ~/.config/flake8
+
+    # ipython
+    ln -s ~/.dotfiles/ipython_config.py ~/.ipython/profile_default/
