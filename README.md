@@ -95,3 +95,6 @@ To use `.bashrc.local`, source it in your regular `.bashrc`:
 
     # ipython
     ln -s ~/.dotfiles/ipython_config.py ~/.ipython/profile_default/
+
+    # calf
+    ln -s ~/.dotfiles/calf.conf ~/calf.conf
