@@ -245,6 +245,8 @@ let glib_deprecated_errors = 1
 
 " Configure Syntastic
 let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_python_checkers = ['flake8']
+let g:syntastic_always_populate_loc_list = 1
 
 " Powerline
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
