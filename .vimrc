@@ -63,7 +63,7 @@ Bundle 'chase/vim-ansible-yaml'
 Bundle 'tpope/vim-markdown'
 Bundle 'petRUShka/vim-opencl'
 Bundle 'ekalinin/Dockerfile.vim'
-Bundle 'wting/rust.vim'
+Bundle 'rust-lang/rust.vim'
 
 
 " Re-enable filetype plugin
