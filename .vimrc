@@ -228,8 +228,9 @@ let g:ctrlp_prompt_mappings = {
 
 " Configure YCM
 let g:ycm_autoclose_preview_window_after_completion=1
-let g:ycm_path_to_python_interpreter = '/usr/bin/python2'
-nnoremap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
+let g:ycm_python_binary_path = '/usr/bin/python2'
+let g:ycm_rust_src_path = '/home/danilo/rust'
+nnoremap <leader>g :YcmCompleter GoTo<CR>
 
 " Configure Supertab / Jedi
 " au FileType python set omnifunc=jedi#complete
