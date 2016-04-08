@@ -220,7 +220,6 @@ let g:pyflakes_use_quickfix = 0
 " instead of 'tex'. The following changes the default filetype back to 'tex'
 let g:tex_flavor = 'latex'
 
-
 " Configure CtrlP behavior
 let g:ctrlp_map = '<leader>t'
 let g:ctrlp_prompt_mappings = {
@@ -258,3 +257,9 @@ let g:syntastic_typescript_tsc_args = '-sourcemap --target ES5'
 
 " Powerline
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+
+" Flake8
+let g:flake8_max_complexity=10
+
+" Syntastic
+let g:syntastic_python_checkers = ["python", "flake8", "pep257"]
