@@ -51,7 +51,7 @@ Bundle 'mileszs/ack.vim'
 " Intensly orgasmic commenting (according to author)
 Bundle 'scrooloose/nerdcommenter'
 
-" Syntax checking
+" Syntastic
 Bundle 'scrooloose/syntastic'
 
 " Language support
@@ -66,7 +66,7 @@ Bundle 'ekalinin/Dockerfile.vim'
 Bundle 'rust-lang/rust.vim'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'leafgarland/typescript-vim'
-
+Bundle 'openscad.vim'
 
 " Re-enable filetype plugin
 filetype indent plugin on
