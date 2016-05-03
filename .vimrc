@@ -64,6 +64,8 @@ Bundle 'tpope/vim-markdown'
 Bundle 'petRUShka/vim-opencl'
 Bundle 'ekalinin/Dockerfile.vim'
 Bundle 'rust-lang/rust.vim'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'leafgarland/typescript-vim'
 
 
 " Re-enable filetype plugin
