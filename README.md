@@ -41,7 +41,7 @@ Update vundle
 Configure YCM
 
     cd ~/.vim/bundle/YouCompleteMe/
-    python2 install.py --racer-completer --tern-completer
+    python2 install.py --racer-completer
 
 Setup gocode
 

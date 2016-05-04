@@ -246,10 +246,14 @@ let g:UltiSnipsListSnippets = "<C-l>"
 " Configure GTK syntax highlighting
 let glib_deprecated_errors = 1
 
+" Typescript
+let g:typescript_compiler_options = '-sourcemap --target ES5'
+
 " Configure Syntastic
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_python_checkers = ['flake8']
 let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_typescript_tsc_args = '-sourcemap --target ES5'
 
 " Powerline
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
