@@ -54,6 +54,9 @@ Bundle 'scrooloose/nerdcommenter'
 " Syntastic
 Bundle 'scrooloose/syntastic'
 
+" Surround
+Bundle 'tpope/vim-surround'
+
 " Language support
 Bundle 'gtk-vim-syntax'
 Bundle 'Blackrush/vim-gocode'
@@ -263,3 +266,7 @@ let g:flake8_max_complexity=10
 
 " Syntastic
 let g:syntastic_python_checkers = ["python", "flake8", "pep257"]
+
+" Surround
+let g:surround_98 = "{% blocktrans trimmed %}\r{% endblocktrans %}"
+let g:surround_116 = "{% trans \"\r\" %}"
