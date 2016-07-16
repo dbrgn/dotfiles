@@ -34,14 +34,15 @@ Setup vundle
     git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
     vim +BundleInstall +qall
 
-Update vundle
-
-    vim +BundleInstall! +qall
-
 Configure YCM
 
     cd ~/.vim/bundle/YouCompleteMe/
+    git submodule update --init --recursive
     python2 install.py --racer-completer
+
+Update vundle
+
+    vim +BundleInstall! +qall
 
 Setup gocode
 
