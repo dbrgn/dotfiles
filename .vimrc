@@ -22,6 +22,9 @@ call vundle#rc()
 " Let vundle manage vundle
 Bundle 'gmarik/vundle'
 
+" Editorconfig
+Bundle 'editorconfig/editorconfig-vim'
+
 " Ctrl-P
 Bundle 'kien/ctrlp.vim'
 
