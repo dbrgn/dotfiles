@@ -60,6 +60,9 @@ Bundle 'scrooloose/syntastic'
 " Surround
 Bundle 'tpope/vim-surround'
 
+" Dependencies for tsuquyomi
+Bundle 'Shougo/vimproc.vim'
+
 " Language support
 Bundle 'gtk-vim-syntax'
 Bundle 'Blackrush/vim-gocode'
@@ -72,6 +75,7 @@ Bundle 'ekalinin/Dockerfile.vim'
 Bundle 'rust-lang/rust.vim'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'leafgarland/typescript-vim'
+Bundle 'Quramy/tsuquyomi'
 Bundle 'openscad.vim'
 
 " Re-enable filetype plugin
@@ -238,6 +242,10 @@ let g:ctrlp_prompt_mappings = {
 let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_python_binary_path = '/usr/bin/python2'
 let g:ycm_rust_src_path = '/home/danilo/rust'
+if !exists("g:ycm_semantic_triggers")
+  let g:ycm_semantic_triggers = {}
+endif
+let g:ycm_semantic_triggers['typescript'] = ['.']
 nnoremap <leader>g :YcmCompleter GoTo<CR>
 
 " Configure Supertab / Jedi
@@ -253,13 +261,13 @@ let g:UltiSnipsListSnippets = "<C-l>"
 let glib_deprecated_errors = 1
 
 " Typescript
-let g:typescript_compiler_options = '-sourcemap --target ES5'
+let g:typescript_compiler_options = '-sourcemap --target ES2015'
 
 " Configure Syntastic
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_python_checkers = ['flake8']
 let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_typescript_tsc_args = '-sourcemap --target ES5'
+let g:syntastic_typescript_tsc_args = '-sourcemap --target ES2015'
 
 " Powerline
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
