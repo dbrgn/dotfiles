@@ -67,7 +67,7 @@ Bundle 'Shougo/vimproc.vim'
 Bundle 'gtk-vim-syntax'
 Bundle 'Blackrush/vim-gocode'
 Bundle 'groenewege/vim-less'
-Bundle "sudar/vim-arduino-syntax"
+Bundle 'sudar/vim-arduino-syntax'
 Bundle 'chase/vim-ansible-yaml'
 Bundle 'tpope/vim-markdown'
 Bundle 'petRUShka/vim-opencl'
@@ -214,8 +214,8 @@ map <leader>a :Ack
 """ External function mappings
 
 " Compile latex and restart mupdf
-map <leader>l :w<CR> :!rubber -m pdftex % && killall -HUP mupdf<CR><CR>
-map <leader>p :!mupdf %:r.pdf &<CR><CR>
+map <leader>l :w<CR> :!rubber -m pdftex %<CR><CR>
+map <leader>p :!zathura %:r.pdf &<CR><CR>
 
 " Run make
 map <leader>m :w<CR> :!make<CR><CR>
