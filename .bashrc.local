@@ -6,7 +6,7 @@ export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
 # Includes
-if [ -f /usr/bin/virtualenvwrapper.sh ] ; then source /usr/bin/virtualenvwrapper.sh ; fi
+if [ -f /usr/bin/virtualenvwrapper_lazy.sh ] ; then source /usr/bin/virtualenvwrapper_lazy.sh ; fi
 if [ -f /usr/share/git/completion/git-completion.bash ] ; then source /usr/share/git/completion/git-completion.bash ; fi
 if [ -f /usr/share/git/git-prompt.sh ] ; then source /usr/share/git/git-prompt.sh ; fi
 
