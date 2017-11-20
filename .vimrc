@@ -77,6 +77,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'leafgarland/typescript-vim'
 Bundle 'Quramy/tsuquyomi'
 Bundle 'openscad.vim'
+Bundle 'ElmCast/elm-vim'
 
 " Re-enable filetype plugin
 filetype indent plugin on
@@ -246,6 +247,7 @@ if !exists("g:ycm_semantic_triggers")
   let g:ycm_semantic_triggers = {}
 endif
 let g:ycm_semantic_triggers['typescript'] = ['.']
+let g:ycm_semantic_triggers['elm'] = ['.']
 nnoremap <leader>g :YcmCompleter GoTo<CR>
 
 " Configure Supertab / Jedi
