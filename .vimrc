@@ -238,6 +238,7 @@ let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
     \ 'MarkToOpen()':         ['<c-z>'],
 \ }
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
 " Configure YCM
 let g:ycm_autoclose_preview_window_after_completion=1
