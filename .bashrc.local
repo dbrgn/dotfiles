@@ -66,13 +66,22 @@ function clone() { git clone git@github.com:${1}.git; }
 function aur-clone() { git clone ssh://aur@aur.archlinux.org/${1}.git; }
 
 # Git shortcuts
-alias gits="git status" && __git_complete gits _git_status
-alias gita="git add" && __git_complete gita _git_add
-alias gitc="git commit" && __git_complete gitc _git_commit
-alias gitco="git checkout" && __git_complete gitco _git_checkout
-alias gitd="git diff" && __git_complete gitd _git_diff
-alias gitp="git pull" && __git_complete gitp _git_pull
-alias gitl="git log" && __git_complete gitl _git_log
+alias g="git"
+__git_complete g _git
+alias gits="git status"
+__git_complete gits _git_status
+alias gita="git add"
+__git_complete gita _git_add
+alias gitc="git commit"
+__git_complete gitc _git_commit
+alias gitco="git checkout"
+__git_complete gitco _git_checkout
+alias gitd="git diff"
+__git_complete gitd _git_diff
+alias gitp="git pull"
+__git_complete gitp _git_pull
+alias gitl="git log"
+__git_complete gitl _git_log
 alias gitvim="vim -p \$(git status --short | awk '\$1 ~ /^M$/ {print \$2}')"
 function git_is_merged() {
     revlist=$(git rev-list -1 $1 --not $2)

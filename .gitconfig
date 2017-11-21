@@ -9,7 +9,20 @@
 	lg = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr %an)%Creset' --abbrev-commit --date=relative
 	wdiff = diff --color-words
 	safemerge = merge --ff-only
+	unstage = reset HEAD --
+	git = !cd "$GIT_PREFIX" && git
+	s = status
+	c = commit
+	d = diff
+	a = add
+	m = merge
+	sm = merge --ff-only
+	pu = push
+	pl = pull
+	co = checkout
 [pager]
 	color = true
 [push]
 	default = simple
+[rebase]
+	autosquash = true
