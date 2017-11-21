@@ -242,7 +242,6 @@ let g:ctrlp_prompt_mappings = {
 " Configure YCM
 let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_python_binary_path = '/usr/bin/python2'
-let g:ycm_rust_src_path = '/home/danilo/rust'
 if !exists("g:ycm_semantic_triggers")
   let g:ycm_semantic_triggers = {}
 endif
