@@ -78,7 +78,7 @@ Bundle 'leafgarland/typescript-vim'
 Bundle 'Quramy/tsuquyomi'
 Bundle 'openscad.vim'
 Bundle 'ElmCast/elm-vim'
-Bundle 'dbrgn/pest.vim'
+Bundle 'pest-parser/pest.vim'
 
 " Re-enable filetype plugin
 filetype indent plugin on
