@@ -3,4 +3,4 @@ UXTerm*metaSendsEscape: true
 UXTerm*reverseVideo: true
 UXTerm*bellIsUrgent: true
 UXTerm*faceName: DejaVu Sans Mono for Powerline
-UXTerm*faceSize: 7
+UXTerm*faceSize: 15
