@@ -79,6 +79,7 @@ Bundle 'Quramy/tsuquyomi'
 Bundle 'openscad.vim'
 Bundle 'ElmCast/elm-vim'
 Bundle 'pest-parser/pest.vim'
+Plugin 'cespare/vim-toml'
 
 " Re-enable filetype plugin
 filetype indent plugin on
