@@ -54,8 +54,8 @@ Bundle 'mileszs/ack.vim'
 " Intensly orgasmic commenting (according to author)
 Bundle 'scrooloose/nerdcommenter'
 
-" Syntastic
-Bundle 'scrooloose/syntastic'
+" Linting
+Bundle 'w0rp/ale'
 
 " Surround
 Bundle 'tpope/vim-surround'
@@ -266,21 +266,17 @@ let glib_deprecated_errors = 1
 " Typescript
 let g:typescript_compiler_options = '-sourcemap --target ES2015'
 
-" Configure Syntastic
-let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_python_checkers = ['flake8']
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_typescript_tsc_args = '-sourcemap --target ES2015'
-
 " Powerline
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 
 " Flake8
 let g:flake8_max_complexity=10
 
-" Syntastic
-let g:syntastic_python_checkers = ["python", "flake8", "pep257"]
-
 " Surround
 let g:surround_98 = "{% blocktrans trimmed %}\r{% endblocktrans %}"
 let g:surround_116 = "{% trans \"\r\" %}"
+
+" Ale
+let g:ale_linters = {
+    \ 'python': ['flake8', 'isort', 'pycodestyle'],
+\ }
