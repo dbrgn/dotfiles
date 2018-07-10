@@ -1,7 +1,0 @@
---ignore-dir=.idea/
---ignore-dir=.tox/
---ignore-dir=VIRTUAL/
---ignore-dir=build/
---ignore-dir=htmlcov/
---ignore-dir=CACHE/
---ignore-dir=migrations/
