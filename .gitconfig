@@ -27,3 +27,5 @@
 	default = simple
 [rebase]
 	autosquash = true
+[core]
+	pager = less -x1,5
