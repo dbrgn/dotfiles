@@ -10,6 +10,7 @@
 	wdiff = diff --color-words
 	safemerge = merge --ff-only
 	unstage = reset HEAD --
+    branchlist = for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
 	git = !cd "$GIT_PREFIX" && git
 	s = status
 	c = commit
