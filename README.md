@@ -63,6 +63,14 @@ To use `.bashrc.local`, source it in your regular `.bashrc`:
     source ~/.dotfiles/.bashrc.local
 
 
+## Window Manager
+
+Symlink config files:
+
+    ln -s ~/.dotfiles/.xprofile ~
+    ln -s ~/.dotfiles/.xsetroot.sh ~
+
+
 ## Systemd Services
 
     sudo cp services/slock.service /etc/systemd/system/
