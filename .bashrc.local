@@ -4,6 +4,7 @@
 # PATH config
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$HOME/.dotfiles/scripts
 
 # Includes
 if [ -f /usr/bin/virtualenvwrapper_lazy.sh ] ; then source /usr/bin/virtualenvwrapper_lazy.sh ; fi
