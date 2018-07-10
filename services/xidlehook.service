@@ -1,0 +1,11 @@
+[Unit]
+Description=Lock the screen automatically after a timeout.
+
+[Service]
+Type=simple
+User=danilo
+Environment=DISPLAY=:0
+ExecStart=/usr/bin/xidlehook --time 1 --timer 'xrandr --output DP-2 --brightness 1; xrandr --output DP-3 --brightness 1; slock' --notify 10 --notifier 'xrandr --output DP-2 --brightness .5; xrandr --output DP-3 --brightness .5' --canceller 'xrandr --output DP-2 --brightness 1; xrandr --output DP-3 --brightness 1' --not-when-fullscreen
+
+[Install]
+WantedBy=graphical.target
