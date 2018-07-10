@@ -49,6 +49,11 @@ Setup gocode
 
     go get -u github.com/nsf/gocode
 
+Install dependencies for ale
+
+    sudo pacman -S flake8
+    sudo pip install mypy-lang
+
 
 ## Bash
 
