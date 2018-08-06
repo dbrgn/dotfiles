@@ -36,11 +36,15 @@ Setup vundle
     vim +BundleInstall +qall
     vim +VimProcInstall
 
+Install vimproc
+
+    vim +VimProcInstall +qall
+
 Configure YCM
 
     cd ~/.vim/bundle/YouCompleteMe/
     git submodule update --init --recursive
-    python2 install.py --racer-completer
+    python2 install.py --rust-completer
 
 Update vundle
 
