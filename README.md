@@ -111,3 +111,6 @@ Symlink config files:
 
     # calf
     ln -s ~/.dotfiles/calf.conf ~/calf.conf
+
+    # alacritty.yml (hardlink for change detection)
+    ln ~/.dotfiles/alacritty.yml ~/.config/alacritty/
