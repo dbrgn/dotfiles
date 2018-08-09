@@ -2,6 +2,8 @@ if [[ "$1" == "up" ]]; then
   sudo systemctl start openvpn-client@threema.service
 elif [[ "$1" == "down" ]]; then
   sudo systemctl stop openvpn-client@threema.service
+elif [[ "$1" == "tail" ]]; then
+  sudo journalctl -f -u openvpn-client@threema.service
 else
-  echo "Usage: vpn (up|down)"
+  echo "Usage: vpn (up|down|tail)"
 fi
