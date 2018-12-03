@@ -29,3 +29,4 @@
 	autosquash = true
 [core]
 	pager = less -x1,5
+	excludesfile = ~/.gitignore
