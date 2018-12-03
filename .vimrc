@@ -248,6 +248,9 @@ endif
 let g:ycm_semantic_triggers['typescript'] = ['.']
 let g:ycm_semantic_triggers['elm'] = ['.']
 nnoremap <leader>g :YcmCompleter GoTo<CR>
+nnoremap <leader>r :YcmCompleter Rename 
+nnoremap <leader>d :YcmCompleter GetDoc<CR>
+nnoremap <leader>q :on<CR>
 
 " Configure Supertab / Jedi
 " au FileType python set omnifunc=jedi#complete
