@@ -65,6 +65,12 @@ function urlfile() { chromium `awk -F= '/URL/{ print $2 }' "$1"`; }
 function uptmp() { scp -C "$1" dbrgn.ch:/srv/www/dbrgn/tmp/ && echo -n "https://tmp.dbrgn.ch/$1" | tee >(xsel -pi) | tee >(xsel -bi) && echo ""; }
 function clone() { git clone git@github.com:${1}.git; }
 function aur-clone() { git clone ssh://aur@aur.archlinux.org/${1}.git; }
+function add-remote() {
+    remote_url="$(git config --get remote.origin.url)"
+    repo_name="$(basename -s .git ${remote_url})"
+    git remote add $1 git@github.com:${1}/${repo_name}.git
+    git remote show $1
+}
 
 # Git shortcuts
 alias g="git"
