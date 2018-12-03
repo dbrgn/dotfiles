@@ -39,7 +39,6 @@ Bundle 'Valloric/YouCompleteMe'
 "Bundle 'davidhalter/jedi-vim'
 
 " Python plugins
-Bundle 'vim-flake8'
 Bundle 'fs111/pydoc.vim'
 
 " Zen coding
@@ -267,9 +266,6 @@ let g:typescript_compiler_options = '-sourcemap --target ES2015'
 
 " Powerline
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
-
-" Flake8
-let g:flake8_max_complexity=10
 
 " Surround
 let g:surround_98 = "{% blocktrans trimmed %}\r{% endblocktrans %}"
