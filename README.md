@@ -82,7 +82,8 @@ Symlink config files:
     sudo cp services/xmodmap.service /etc/systemd/system/
     sudo cp services/xkbmap-ch.service /etc/systemd/system/
     sudo systemctl enable slock xidlehook xmodmap xkbmap-ch
-    sudo systemctl start xidlehook xmodmap xkbmap-ch
+    sudo systemctl enable ssh-agent@danilo
+    sudo systemctl start xidlelock xmodmap xkbmap-ch
 
 ## Other config files
 
