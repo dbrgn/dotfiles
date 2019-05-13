@@ -21,6 +21,8 @@
 	pu = push
 	pl = pull
 	co = checkout
+	rebse = rebase
+	comit = commit
 [pager]
 	color = true
 [push]
