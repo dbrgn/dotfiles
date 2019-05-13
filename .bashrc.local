@@ -71,6 +71,18 @@ function add-remote() {
     git remote add $1 git@github.com:${1}/${repo_name}.git
     git remote show $1
 }
+function branch-merged() {
+    local BRANCH
+    BRANCH=$(git rev-parse --abbrev-ref HEAD)
+    read -r -p "Will delete branch \"$BRANCH\". Continue (y/N)?" choice
+    case "$choice" in
+      y|Y ) git checkout master &&
+            git pull &&
+            git branch -d "$BRANCH" &&
+            git fetch -p;;
+      * ) echo "aborting";;
+    esac
+}
 
 # Git shortcuts
 alias g="git"
