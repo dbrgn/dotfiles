@@ -104,6 +104,7 @@ alias gitp="git pull"
 __git_complete gitp _git_pull
 alias gitl="git log"
 __git_complete gitl _git_log
+alias gitrh="git reset HEAD"
 alias gitvim="vim -p \$(git status --short | awk '\$1 ~ /^M$/ {print \$2}')"
 function git_is_merged() {
     revlist=$(git rev-list -1 $1 --not $2)
