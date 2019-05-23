@@ -29,9 +29,18 @@ window:
     x: 2
     y: 2
 
+  # Spread additional padding evenly around the terminal content.
+  dynamic_padding: true
+
   # Window decorations
-  # Setting this to false will result in window without borders and title bar.
+  #
+  # Values for `decorations`:
+  # - full: Borders and title bar
+  # - none: Neither borders nor title bar
   decorations: none
+
+  # When true, alacritty starts maximized.
+  start_maximized: false
 
 scrolling:
   # How many lines of scrollback to keep,
@@ -346,7 +355,9 @@ key_bindings:
   - { key: Insert,   mods: Shift,   action: PasteSelection               }
   - { key: Key0,     mods: Control, action: ResetFontSize                }
   - { key: Add,      mods: Control, action: IncreaseFontSize             }
+  - { key: Equals,   mods: Control, action: IncreaseFontSize             }
   - { key: Subtract, mods: Control, action: DecreaseFontSize             }
+  - { key: Minus,    mods: Control, action: DecreaseFontSize             }
   - { key: Home,                    chars: "\x1bOH",   mode: AppCursor   }
   - { key: Home,                    chars: "\x1b[H",   mode: ~AppCursor  }
   - { key: End,                     chars: "\x1bOF",   mode: AppCursor   }
@@ -357,6 +368,10 @@ key_bindings:
   - { key: PageDown, mods: Shift,   chars: "\x1b[6;2~"                   }
   - { key: PageDown, mods: Control, chars: "\x1b[6;5~"                   }
   - { key: PageDown,                chars: "\x1b[6~"                     }
+  - { key: PageUp,   mods: Shift,   action: ScrollPageUp                 }
+  - { key: PageDown, mods: Shift,   action: ScrollPageDown               }
+  - { key: End,      mods: Shift,   action: ScrollToBottom               }
+  - { key: Home,     mods: Shift,   action: ScrollToTop                  }
   - { key: Tab,      mods: Shift,   chars: "\x1b[Z"                      }
   - { key: Back,                    chars: "\x7f"                        }
   - { key: Back,     mods: Alt,     chars: "\x1b\x7f"                    }
@@ -442,3 +457,7 @@ key_bindings:
   - { key: F10,      mods: Super,   chars: "\x1b[21;3~"                  }
   - { key: F11,      mods: Super,   chars: "\x1b[23;3~"                  }
   - { key: F12,      mods: Super,   chars: "\x1b[24;3~"                  }
+  - { key: Home,     mods: Alt,     chars: "\x1b[1;3H"                   }
+  - { key: End,      mods: Alt,     chars: "\x1b[1;3F"                   }
+  - { key: PageUp,   mods: Alt,     chars: "\x1b[5;3~"                   }
+  - { key: PageDown, mods: Alt,     chars: "\x1b[6;3~"                   }
