@@ -32,3 +32,5 @@
 [core]
 	pager = less -x1,5
 	excludesfile = ~/.gitignore
+[submodule]
+	recurse = true
