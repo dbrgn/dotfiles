@@ -73,6 +73,7 @@ function add-remote() {
     repo_name="$(basename -s .git ${remote_url})"
     git remote add $1 git@github.com:${1}/${repo_name}.git
     git remote show $1
+    git fetch $1
 }
 function branch-merged() {
     local BRANCH
