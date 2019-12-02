@@ -59,12 +59,12 @@ alias rs='./manage.py runserver'
 alias sp='./manage.py shell_plus'
 alias cel='celery -A config worker -l info -Q celery,high_prio -O fair'
 alias wn1='watch -n 1'
-alias irc='ssh -t dbrgn.ch -p 2223 "screen -d -r irc"'
+alias irc='ssh -p 2223 -t v2201907172493568.quicksrv.de "screen -d -r irc"'
 alias vimrc='vim ~/.vimrc'
 alias hl='rg --passthru'
 function shorturl() { curl --data "url=$@" https://s.dbrgn.ch/; }
 function urlfile() { chromium `awk -F= '/URL/{ print $2 }' "$1"`; }
-function uptmp() { scp -C "$1" scp://dbrgn.ch:2223//srv/www/dbrgn/tmp/ && echo -n "https://tmp.dbrgn.ch/$1" | tee >(xsel -pi) | tee >(xsel -bi) && echo ""; }
+function uptmp() { scp -P 2223 -C "$1" dbrgn.ch:/srv/www/dbrgn/tmp/ && echo -n "https://tmp.dbrgn.ch/$1" | tee >(xsel -pi) | tee >(xsel -bi) && echo ""; }
 function clone() { git clone git@github.com:${1}.git; }
 function aur-clone() { git clone ssh://aur@aur.archlinux.org/${1}.git; }
 function aur-shellcheck() { shellcheck PKGBUILD -e SC2154,SC2034,SC2164 -s bash; }
