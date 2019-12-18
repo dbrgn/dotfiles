@@ -277,6 +277,7 @@ let g:surround_116 = "{% trans \"\r\" %}"
 " Ale
 let g:ale_linters = {
     \ 'python': ['isort', 'flake8', 'mypy'],
+    \ 'typescript': ['tslint'],
 \ }
 let g:ale_python_flake8_use_global  = 1
 let g:ale_python_mypy_options = '--ignore-missing-imports'
