@@ -219,3 +219,11 @@ fi
 if command_exists rvm; then
     export PS1="\$(rvm-prompt | awk -F'@' '{if (\$2) print \"{\"\$2\"}\"}')$PS1"
 fi
+
+# SSH agent
+if ! pgrep -u "$USER" ssh-agent > /dev/null; then
+    ssh-agent > "$XDG_RUNTIME_DIR/ssh-agent.env"
+fi
+if [[ ! "$SSH_AUTH_SOCK" ]]; then
+    eval "$(<"$XDG_RUNTIME_DIR/ssh-agent.env")" 1>/dev/null
+fi
