@@ -15,7 +15,6 @@ Contains many tools for Python development.
  * vim compiled with python support
  * C compiler
  * C++ compiler and python headers
- * Jedi (https://github.com/davidhalter/jedi)
 
 ### Setup
 
@@ -44,7 +43,7 @@ Configure YCM
 
     cd ~/.vim/bundle/YouCompleteMe/
     git submodule update --init --recursive
-    python2 install.py --rust-completer
+    python install.py --rust-completer
 
 Update vundle
 
@@ -56,8 +55,7 @@ Setup gocode
 
 Install dependencies for ale
 
-    sudo pacman -S flake8
-    sudo pip install mypy-lang
+    sudo pacman -S flake8 mypy
 
 
 ## Bash
