@@ -80,7 +80,7 @@ input * {
 input "1739:30383:CUST0001:00_06CB:76AF_Touchpad" {
     # Enable clicking by tapping
     tap enabled
-    tap_drag enabled
+    drag enabled
     # Disable touchpad while typing
     dwt enabled
     # Inverted scrolling (move content, not viewport)
