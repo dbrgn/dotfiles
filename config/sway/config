@@ -255,5 +255,6 @@ bar {
 
 # Notifications
 exec mako
+bindsym Ctrl+space exec makoctl dismiss
 
 include /etc/sway/config.d/*

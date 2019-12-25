@@ -120,3 +120,4 @@ Symlink config files:
 
     # sway & co
     ln -s ~/.dotfiles/config/sway ~/.config/sway
+    ln -s ~/.dotfiles/config/mako ~/.config/mako
