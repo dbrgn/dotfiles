@@ -118,5 +118,5 @@ Symlink config files:
     # alacritty.yml (hardlink for change detection)
     ln ~/.dotfiles/alacritty.yml ~/.config/alacritty/
 
-    # sway
-    ln -s ~/.dotfiles/sway-config ~/.config/sway/config
+    # sway & co
+    ln -s ~/.dotfiles/config/sway ~/.config/sway

@@ -17,9 +17,8 @@ set $term alacritty
 ### Application launcher
 
 # Note: it's recommended that you pass the final command to sway
-#set $menu dmenu_path | dmenu | xargs swaymsg exec --
-set $menu dmenu_path | BEMENU_BACKEND=wayland bemenu -p ">>" --fn "DejaVu [48]" | xargs swaymsg exec --
-#set $menu j4-dmenu-desktop --dmenu='bemenu -i --nb "#3f3f3f" --nf "#dcdccc" --fn "pango:DejaVu Sans Mono 12"' --term='termite' | xargs swaymsg exec --
+set $menu dmenu_path | dmenu | xargs swaymsg exec --
+set $menu j4-dmenu-desktop --dmenu='bemenu -i -p ">>" --fn "Noto Sans 19"' --term='alacritty' | xargs swaymsg exec --
 
 ### Enable Xwayland support
 
@@ -54,10 +53,10 @@ gaps {
 # resumed. It will also lock your screen before your computer goes to sleep.
 
 exec swayidle -w \
-         timeout 60 'brightnessctl set 50%-' \
+         timeout 170 'brightnessctl set 50%-' \
               resume 'brightnessctl set 50%+' \
-         timeout 70 'swaylock -f' \
-         timeout 130 'swaymsg "output * dpms off"' \
+         timeout 180 'swaylock -f' \
+         timeout 240 'swaymsg "output * dpms off"' \
               resume 'swaymsg "output * dpms on"' \
          before-sleep 'swaylock -f'
 
@@ -163,9 +162,8 @@ input "1739:30383:CUST0001:00_06CB:76AF_Touchpad" {
     bindsym $mod+v splitv
 
     # Switch the current container between different layout styles
-    bindsym $mod+s layout stacking
-    bindsym $mod+w layout tabbed
-    bindsym $mod+e layout toggle split
+    bindsym $mod+m layout tabbed
+    bindsym $mod+t layout toggle split
 
     # Make the current focus fullscreen
     bindsym $mod+f fullscreen
@@ -231,6 +229,10 @@ bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
+# Screen capture
+bindsym print     exec filename=$(date +'screenshot-%Y%m%d-%H%M%S.png') && swaymsg -t get_tree | jq -r '.. | (.nodes? // empty)[] | select(.pid and .visible) | .rect | "\(.x),\(.y) \(.width)x\(.height)"' | slurp | grim -g - /tmp/$filename && notify-send "Screenshot captured" "/tmp/$filename"
+bindsym Alt+print exec filename=$(date +'screenshot-%Y%m%d-%H%M%S.png') && swaymsg -t get_tree | jq -r '.. | (.nodes? // empty)[] | select(.pid and .visible) | .rect | "\(.x),\(.y) \(.width)x\(.height)"' | slurp | grim -g - /tmp/$filename && bash -i -c "scp -P 2223 -C \"/tmp/$filename\" dbrgn.ch:/srv/www/dbrgn/tmp/screenshots/" && wl-copy "https://tmp.dbrgn.ch/screenshots/$filename" && notify-send "Screenshot captured and uploaded" "URL copied to clipboard."
+
 #
 # Status Bar:
 #
@@ -250,5 +252,8 @@ bar {
 #        inactive_workspace #32323200 #32323200 #5c5c5c
 #    }
 }
+
+# Notifications
+exec mako
 
 include /etc/sway/config.d/*
