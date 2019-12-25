@@ -107,7 +107,7 @@ Symlink config files:
     ln -s ~/.dotfiles/.gitconfig ~
 
     # flake8
-    ln -s ~/.dotfiles/flake8 ~/.config/flake8
+    ln -s ~/.dotfiles/config/flake8 ~/.config/flake8
 
     # ipython
     ln -s ~/.dotfiles/ipython_config.py ~/.ipython/profile_default/
@@ -122,3 +122,4 @@ Symlink config files:
     ln -s ~/.dotfiles/config/sway ~/.config/sway
     ln -s ~/.dotfiles/config/mako ~/.config/mako
     ln -s ~/.dotfiles/config/swaylock ~/.config/swaylock
+    ln -s ~/.dotfiles/config/waybar ~/.config/waybar
