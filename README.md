@@ -43,7 +43,7 @@ Configure YCM
 
     cd ~/.vim/bundle/YouCompleteMe/
     git submodule update --init --recursive
-    python install.py --rust-completer
+    python install.py --rust-completer --ts-completer
 
 Update vundle
 
