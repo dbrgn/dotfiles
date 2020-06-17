@@ -34,3 +34,5 @@
 	excludesfile = ~/.gitignore
 [submodule]
 	recurse = true
+[pull]
+	ff = only
