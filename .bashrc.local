@@ -121,9 +121,6 @@ function git_is_merged() {
 # Create dir and cd into it
 function mkcd() { mkdir -p "$1" && cd "$1"; }
 
-# List directory contents after cd
-function cd() { builtin cd -- "$@" && { [ "$PS1" = "" ] || ls -hrt --color; }; }
-
 # Convert pull request
 function convert-pull-request() {
     if [ $# -eq 3 ]; then
