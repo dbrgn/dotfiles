@@ -94,7 +94,8 @@ hi ColorColumn cterm=none ctermbg=236
 
 " File extension to filetype matching
 if has("autocmd")
-    autocmd BufNewFile,BufRead,TabEnter *.gs set filetype=javascript
+    autocmd BufNewFile,BufRead *.gs set filetype=javascript
+    autocmd BufNewFile,BufRead *.tera set ft=jinja
 endif
 
 " Map leader key
