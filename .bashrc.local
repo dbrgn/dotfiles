@@ -78,9 +78,15 @@ function add-remote() {
 function branch-merged() {
     local BRANCH
     BRANCH=$(git rev-parse --abbrev-ref HEAD)
+    local MAIN
+    if $( git show-ref --verify --quiet refs/heads/main ); then
+        MAIN=main
+    else
+        MAIN=master
+    fi
     read -r -p "Will delete branch \"$BRANCH\". Continue (y/N)?" choice
     case "$choice" in
-      y|Y ) git checkout master &&
+      y|Y ) git checkout "$MAIN" &&
             git pull &&
             git branch -d "$BRANCH" &&
             git fetch -p;;
