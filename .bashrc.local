@@ -222,3 +222,6 @@ fi
 if command_exists rvm; then
     export PS1="\$(rvm-prompt | awk -F'@' '{if (\$2) print \"{\"\$2\"}\"}')$PS1"
 fi
+
+# SSH agent
+export SSH_AUTH_SOCK="${XDG_RUNTIME_DIR}/ssh-agent.socket"
