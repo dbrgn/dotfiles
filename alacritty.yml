@@ -50,6 +50,23 @@ window:
   #   - SimpleFullscreen
   startup_mode: Windowed
 
+  title: Alacritty
+  dynamic_title: true
+
+  # Window class (Linux/BSD only):
+  #class:
+    # Application instance name
+    #instance: Alacritty
+    # General application class
+    #general: Alacritty
+
+  # GTK theme variant (Linux/BSD only)
+  #
+  # Override the variant of the GTK theme. Commonly supported values are `dark` and `light`.
+  # Set this to `None` to use the default theme variant.
+  #gtk_theme_variant: None
+
+
 scrolling:
   # How many lines of scrollback to keep,
   # '0' will disable scrolling.
@@ -185,7 +202,7 @@ colors:
     cyan:    '0x66cccc'
     white:   '0xdddddd'
 
-# Visual Bell
+# Bell
 #
 # Any time the BEL code is received, Alacritty "rings" the visual bell. Once
 # rung, the terminal background will be set to white and transition back to the
@@ -207,12 +224,14 @@ colors:
 #
 # To completely disable the visual bell, set its duration to 0.
 #
-visual_bell:
+bell:
   animation: EaseOutSine
   duration: 120
+  color: '#ffffff'
+  command: None
 
 # Background opacity
-background_opacity: 1.0
+background_opacity: 0.92
 
 # Mouse bindings
 #
@@ -264,8 +283,6 @@ selection:
   # the selection clipboard. Otherwise, it will only be copied to the selection
   # clipboard.
   save_to_clipboard: false
-
-dynamic_title: true
 
 cursor:
   # Cursor style
