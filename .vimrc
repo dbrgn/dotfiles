@@ -284,6 +284,9 @@ set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 let g:surround_98 = "{% blocktrans trimmed %}\r{% endblocktrans %}"
 let g:surround_116 = "{% trans \"\r\" %}"
 
+" Rust
+"let g:rustfmt_options = '--edition 2018'
+
 " Ale
 let g:ale_linters = {
     \ 'python': ['isort', 'flake8', 'mypy'],
