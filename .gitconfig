@@ -36,3 +36,5 @@
 	recurse = true
 [pull]
 	ff = only
+[init]
+	defaultBranch = main
