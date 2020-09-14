@@ -249,6 +249,14 @@ if !exists("g:ycm_semantic_triggers")
 endif
 let g:ycm_semantic_triggers['typescript'] = ['.']
 let g:ycm_semantic_triggers['elm'] = ['.']
+let g:ycm_language_server = [
+\    {
+\        'name': 'rust',
+\        'cmdline': ['/home/danilo/Projects/rust-analyzer/target/release/rust-analyzer'],
+\        'filetypes': ['rust'],
+\        'project_root_files': ['Cargo.toml'],
+\    }
+\]
 nnoremap <leader>g :YcmCompleter GoTo<CR>
 nnoremap <leader>r :YcmCompleter Rename 
 nnoremap <leader>d :YcmCompleter GetDoc<CR>
