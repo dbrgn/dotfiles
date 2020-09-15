@@ -6,6 +6,21 @@ My personal configuration files.
     git clone git@github.com:dbrgn/dotfiles.git ~/.dotfiles
 
 
+## NeoVim
+
+Prepare directories:
+
+    mkdir -p ~/.local/share/nvim/site/autoload/ ~/.config/nvim/
+
+Symlink configs:
+
+    ln -s ~/.dotfiles/nvim.init.vim ~/.config/nvim/init.vim
+
+Download vim-plug:
+
+    curl -fLo ~/.local/share/nvim/site/autoload/plug.vim \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
 ## Vim
 
 Contains many tools for Python development.
@@ -25,8 +40,9 @@ Create symlinks
 
 Copy and install powerline fonts
 
-    mkdir -p ~/.fonts/truetype/
+    mkdir -p ~/.fonts/{truetype,opentype}/
     cp ~/.dotfiles/fonts/*.ttf ~/.fonts/truetype/
+    cp ~/.dotfiles/fonts/*.otf ~/.fonts/opentype/
     fc-cache -fv ~/.fonts
 
 Setup vundle
