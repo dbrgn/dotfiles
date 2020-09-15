@@ -1,4 +1,8 @@
+#!/usr/bin/env bash
+set -eo pipefail
+
 if [[ "$1" == "up" ]]; then
+  sudo systemctl stop openvpn-client@threema.service
   sudo systemctl start openvpn-client@threema.service
 elif [[ "$1" == "down" ]]; then
   sudo systemctl stop openvpn-client@threema.service
