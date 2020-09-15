@@ -21,6 +21,11 @@ Download vim-plug:
     curl -fLo ~/.local/share/nvim/site/autoload/plug.vim \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
+Install plugins:
+
+    nvim +PlugInstall
+
+
 ## Vim
 
 Contains many tools for Python development.
