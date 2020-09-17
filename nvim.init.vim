@@ -131,6 +131,11 @@ set shortmess+=c
 
 " Ctrl-P
 let g:ctrlp_map = '<leader>t'
+let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': ['<c-t>'],
+    \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
+    \ 'MarkToOpen()':         ['<c-z>'],
+\ }
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
 " Airline
