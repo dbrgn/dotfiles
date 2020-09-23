@@ -106,6 +106,9 @@ Plug 'nvim-lua/completion-nvim'
 " Code formatting
 Plug 'Chiel92/vim-autoformat'
 
+" Test running
+Plug 'vim-test/vim-test'
+
 " Initialize plugin system
 call plug#end()
 
@@ -144,6 +147,13 @@ let g:airline_powerline_fonts = 1
 
 " Autoformat
 noremap <leader>f :Autoformat<CR>
+
+" Tests
+nmap <silent> <leader>rn :TestNearest<CR>
+nmap <silent> <leader>rf :TestFile<CR>
+nmap <silent> <leader>rs :TestSuite<CR>
+nmap <silent> <leader>rl :TestLast<CR>
+nmap <silent> <leader>rg :TestVisit<CR>
 
 
 """ THEME
