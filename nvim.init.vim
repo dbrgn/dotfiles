@@ -90,7 +90,7 @@ call plug#begin(stdpath('data') . '/plugged')
 Plug 'gosukiwi/vim-atom-dark'
 
 " Ctrl-P
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 
 " Fugitive (git)
 Plug 'tpope/vim-fugitive'
