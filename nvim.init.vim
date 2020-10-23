@@ -145,6 +145,10 @@ set completeopt=menuone,noinsert,noselect
 " Avoid showing message extra message when using completion
 set shortmess+=c
 
+" Compilation command
+autocmd Filetype rust noremap <leader>b :!cargo build<CR>
+autocmd Filetype rust noremap <leader>c :!cargo check<CR>
+
 
 """ PLUGIN SETTINGS
 
