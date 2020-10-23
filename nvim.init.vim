@@ -106,6 +106,9 @@ Plug 'nvim-lua/completion-nvim'
 " Code formatting
 Plug 'Chiel92/vim-autoformat'
 
+" Language support
+Plug 'elmcast/elm-vim'
+
 " Test running
 Plug 'vim-test/vim-test'
 
