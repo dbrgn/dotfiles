@@ -165,6 +165,16 @@ let g:airline_powerline_fonts = 1
 noremap <leader>f :Autoformat<CR>
 
 " Tests
+let test#strategy = "neovim"
+"let test#rust#cargotest#test_patterns = {
+"    \ 'test': ['\v(#\[tokio::test\])'],
+"    \ 'namespace': ['\vmod (tests?)']
+"\}
+"let test#rust#cargotest#patterns = {
+"    \ 'test': ['\v\s*async fn\s+(\w+)'],
+"    \ 'namespace': []
+"\}
+
 nmap <silent> <leader>rn :TestNearest<CR>
 nmap <silent> <leader>rf :TestFile<CR>
 nmap <silent> <leader>rs :TestSuite<CR>
