@@ -100,7 +100,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 " LSP / Autocompletion
-Plug 'neovim/nvim-lsp'
+Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lua/completion-nvim'
 
 " Code formatting
@@ -116,7 +116,23 @@ call plug#end()
 """ AUTOCOMPLETION / LSP
 
 lua << EOF
-require('nvim_lsp').rust_analyzer.setup({ on_attach=require('completion').on_attach })
+require('nvim_lsp').rust_analyzer.setup({
+    on_attach = require('completion').on_attach
+})
+require('nvim_lsp').pyls.setup({
+    settings = {
+        pyls = {
+            configurationSources = { "pycodestyle" },
+            plugins = {
+                pycodestyle = {
+                    ignore = { "E124", "E126", "E127", "E128" },
+                    maxLineLength = 99,
+                },
+            },
+        },
+    },
+})
+require('nvim_lsp').elmls.setup{}
 EOF
 
 " Use <Tab> and <S-Tab> to navigate through popup menu
