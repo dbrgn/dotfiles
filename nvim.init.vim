@@ -138,6 +138,10 @@ require('nvim_lsp').pyls.setup({
 require('nvim_lsp').elmls.setup{}
 EOF
 
+" Set LSP omnifunc function for completions with <C-X>-<C-O>
+autocmd Filetype rust setlocal omnifunc=v:lua.vim.lsp.omnifunc
+autocmd Filetype python setlocal omnifunc=v:lua.vim.lsp.omnifunc
+
 " Use <Tab> and <S-Tab> to navigate through popup menu
 inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
