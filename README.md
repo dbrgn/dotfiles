@@ -101,8 +101,14 @@ Symlink config files:
     sudo cp services/xmodmap.service /etc/systemd/system/
     sudo cp services/xkbmap-ch.service /etc/systemd/system/
     sudo systemctl enable slock xidlehook xmodmap xkbmap-ch
-    sudo systemctl enable ssh-agent@danilo
     sudo systemctl start xidlelock xmodmap xkbmap-ch
+
+## SSH Agent
+
+    mkdir -p ~/.config/systemd/user/
+    cp services/ssh-agent.service ~/.config/systemd/user/
+    systemctl --user start ssh-agent
+    systemctl --user enable ssh-agent
 
 ## Other config files
 
