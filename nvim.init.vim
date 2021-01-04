@@ -119,10 +119,10 @@ call plug#end()
 """ AUTOCOMPLETION / LSP
 
 lua << EOF
-require('nvim_lsp').rust_analyzer.setup({
+require('lspconfig').rust_analyzer.setup({
     on_attach = require('completion').on_attach
 })
-require('nvim_lsp').pyls.setup({
+require('lspconfig').pyls.setup({
     settings = {
         pyls = {
             configurationSources = { "pycodestyle" },
@@ -135,7 +135,7 @@ require('nvim_lsp').pyls.setup({
         },
     },
 })
-require('nvim_lsp').elmls.setup{}
+require('lspconfig').elmls.setup{}
 EOF
 
 " Set LSP omnifunc function for completions with <C-X>-<C-O>
