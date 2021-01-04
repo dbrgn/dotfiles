@@ -295,3 +295,6 @@ let g:ale_linters = {
 let g:ale_python_flake8_use_global  = 1
 let g:ale_python_mypy_options = '--ignore-missing-imports'
 let g:ale_lua_luacheck_options = '--globals KEYS --globals ARGV --globals redis --globals struct --globals table --globals string --globals math'
+
+" Svelte
+au! BufNewFile,BufRead *.svelte set ft=html
