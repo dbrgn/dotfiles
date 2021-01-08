@@ -76,7 +76,7 @@ Bundle 'Quramy/tsuquyomi'
 Bundle 'openscad.vim'
 Bundle 'ElmCast/elm-vim'
 Bundle 'pest-parser/pest.vim'
-Plugin 'cespare/vim-toml'
+Bundle 'cespare/vim-toml'
 Bundle 'evanleck/vim-svelte'
 
 " Re-enable filetype plugin
