@@ -158,6 +158,11 @@ autocmd Filetype rust noremap <leader>b :!cargo build<CR>
 autocmd Filetype rust noremap <leader>c :!cargo check<CR>
 
 
+""" LANGUAGE SPECIFIC SETTINGS
+
+autocmd Filetype rust setlocal textwidth=79
+
+
 """ PLUGIN SETTINGS
 
 " Ctrl-P
