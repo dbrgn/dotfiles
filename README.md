@@ -50,6 +50,11 @@ Copy and install powerline fonts
     cp ~/.dotfiles/fonts/*.otf ~/.fonts/opentype/
     fc-cache -fv ~/.fonts
 
+Configure fontconfig:
+
+    mkdir -p ~/.config/fontconfig/
+    ln -s ~/.dotfiles/fonts.conf ~/.config/fontconfig/
+
 Setup vundle
 
     git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
