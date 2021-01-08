@@ -108,6 +108,7 @@ Plug 'Chiel92/vim-autoformat'
 
 " Language support
 Plug 'elmcast/elm-vim'
+Plug 'cespare/vim-toml'
 
 " Test running
 Plug 'vim-test/vim-test'
