@@ -164,6 +164,8 @@ autocmd Filetype rust noremap <leader>c :!cargo check<CR>
 """ LANGUAGE SPECIFIC SETTINGS
 
 autocmd Filetype rust setlocal textwidth=79
+autocmd Filetype html setlocal textwidth=99
+autocmd Filetype php setlocal textwidth=99
 
 
 """ PLUGIN SETTINGS
