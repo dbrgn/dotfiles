@@ -103,6 +103,9 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lua/completion-nvim'
 
+" Editorconfig
+Plug 'editorconfig/editorconfig-vim'
+
 " Code formatting
 Plug 'Chiel92/vim-autoformat'
 
