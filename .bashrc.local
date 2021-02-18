@@ -95,6 +95,9 @@ function branch-merged() {
 }
 function mkcdir () { mkdir -- "$1" && cd -- "$1"; }
 
+# Calculator with = (requires bc)
+= () { bc -l <<< "$*"; }
+
 # Git shortcuts
 alias g="git"
 __git_complete g _git
