@@ -93,6 +93,7 @@ function branch-merged() {
       * ) echo "aborting";;
     esac
 }
+function mkcdir () { mkdir -- "$1" && cd -- "$1"; }
 
 # Git shortcuts
 alias g="git"
