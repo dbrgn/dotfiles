@@ -112,6 +112,7 @@ Plug 'Chiel92/vim-autoformat'
 " Language support
 Plug 'elmcast/elm-vim'
 Plug 'cespare/vim-toml'
+Plug 'udalov/kotlin-vim'
 
 " Test running
 Plug 'vim-test/vim-test'
@@ -140,6 +141,7 @@ require('lspconfig').pyls.setup({
     },
 })
 require('lspconfig').elmls.setup{}
+require('lspconfig').kotlin_language_server.setup{}
 EOF
 
 " Set LSP omnifunc function for completions with <C-X>-<C-O>
