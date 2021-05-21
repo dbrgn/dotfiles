@@ -37,6 +37,8 @@ gaps {
     outer 8
     inner 16
 }
+smart_gaps off
+smart_borders on
 
 ### Idle configuration
 #
@@ -139,6 +141,7 @@ input "1739:30383:CUST0001:00_06CB:76AF_Touchpad" {
     bindsym $mod+8 workspace 8
     bindsym $mod+9 workspace 9
     bindsym $mod+0 workspace 10
+    bindsym $mod+Tab workspace back_and_forth
     # Move focused container to workspace
     bindsym $mod+Shift+1 move container to workspace 1
     bindsym $mod+Shift+2 move container to workspace 2
@@ -233,28 +236,22 @@ bindsym XF86AudioPrev exec playerctl previous
 bindsym print     exec filename=$(date +'screenshot-%Y%m%d-%H%M%S.png') && swaymsg -t get_tree | jq -r '.. | (.nodes? // empty)[] | select(.pid and .visible) | .rect | "\(.x),\(.y) \(.width)x\(.height)"' | slurp | grim -g - /tmp/$filename && notify-send "Screenshot captured" "/tmp/$filename"
 bindsym Alt+print exec filename=$(date +'screenshot-%Y%m%d-%H%M%S.png') && swaymsg -t get_tree | jq -r '.. | (.nodes? // empty)[] | select(.pid and .visible) | .rect | "\(.x),\(.y) \(.width)x\(.height)"' | slurp | grim -g - /tmp/$filename && bash -i -c "scp -P 2223 -C \"/tmp/$filename\" dbrgn.ch:/srv/www/dbrgn/tmp/screenshots/" && wl-copy "https://tmp.dbrgn.ch/screenshots/$filename" && notify-send "Screenshot captured and uploaded" "URL copied to clipboard."
 
-#
+# Screen lock
+bindsym Ctrl+Alt+L exec swaylock
+
 # Status Bar:
 #
-# Read `man 5 sway-bar` for more information about this section.
+# Read `man 5 waybar` for more information about this section.
 bar {
     swaybar_command waybar
-
-#    position top
-#
-#    # When the status_command prints a new line to stdout, swaybar updates.
-#    # The default just shows the current date and time.
-#    status_command while date +'%Y-%m-%d %l:%M:%S %p'; do sleep 1; done
-#
-#    colors {
-#        statusline #ffffff
-#        background #323232
-#        inactive_workspace #32323200 #32323200 #5c5c5c
-#    }
 }
 
 # Notifications
 exec mako
 bindsym Ctrl+space exec makoctl dismiss
+
+# Firefox workaround
+# https://bugzilla.mozilla.org/show_bug.cgi?id=1628431
+for_window [title="Firefox — Sharing Indicator"] floating enable;
 
 include /etc/sway/config.d/*
