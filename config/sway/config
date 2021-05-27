@@ -77,6 +77,7 @@ exec swayidle -w \
 # Read `man 5 sway-input` for more information about this section.
 input * {
     xkb_layout "ch, us"
+    xkb_options compose:menu
 }
 input "1739:30383:CUST0001:00_06CB:76AF_Touchpad" {
     # Enable clicking by tapping
