@@ -1,0 +1,7 @@
+[user]
+    email = danilo.bargen@threema.ch
+    signingkey = 775D09B5F310F30DE1ACBB6533E55F08731AD254
+[tag]
+    gpgsign = true
+[commit]
+    gpgsign = true

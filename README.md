@@ -134,8 +134,8 @@ Symlink config files:
     # gtk 2 theme
     ln -s ~/.dotfiles/.gtkrc-2.0 ~
 
-    # gitconfig
-    ln -s ~/.dotfiles/.gitconfig ~
+    # git
+    ln -s ~/.dotfiles/git ~/.config/git
 
     # flake8
     ln -s ~/.dotfiles/config/flake8 ~/.config/flake8

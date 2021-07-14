@@ -38,3 +38,6 @@
 	ff = only
 [init]
 	defaultBranch = main
+
+[includeIf "gitdir:~/Threema/"]
+	path = ~/.config/git/work
