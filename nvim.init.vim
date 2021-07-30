@@ -127,7 +127,7 @@ lua << EOF
 require('lspconfig').rust_analyzer.setup({
     on_attach = require('completion').on_attach
 })
-require('lspconfig').pyls.setup({
+require('lspconfig').pylsp.setup({
     settings = {
         pyls = {
             configurationSources = { "pycodestyle" },
