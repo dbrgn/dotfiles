@@ -89,8 +89,10 @@ call plug#begin(stdpath('data') . '/plugged')
 " Theme
 Plug 'gosukiwi/vim-atom-dark'
 
-" Ctrl-P
-Plug 'ctrlpvim/ctrlp.vim'
+" Fuzzy finding
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
 " Fugitive (git)
 Plug 'tpope/vim-fugitive'
@@ -286,14 +288,9 @@ autocmd Filetype rust noremap <leader>c :!cargo check<CR>
 
 """ PLUGIN SETTINGS
 
-" Ctrl-P
-let g:ctrlp_map = '<leader>t'
-let g:ctrlp_prompt_mappings = {
-    \ 'AcceptSelection("e")': ['<c-t>'],
-    \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
-    \ 'MarkToOpen()':         ['<c-z>'],
-\ }
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+" Telescope
+nnoremap <leader>t <cmd>Telescope find_files<cr>
+nnoremap <leader>g <cmd>Telescope live_grep<cr>
 
 " Airline
 let g:airline_theme='powerlineish'
