@@ -107,12 +107,24 @@ Symlink config files:
     sudo systemctl enable slock xmodmap xkbmap-ch
     sudo systemctl start xidlelock xmodmap xkbmap-ch
 
+
 ## SSH Agent
 
     mkdir -p ~/.config/systemd/user/
     cp services/ssh-agent.service ~/.config/systemd/user/
     systemctl --user start ssh-agent
     systemctl --user enable ssh-agent
+
+
+## Sway
+
+    sudo pacman -S sway mako swaylock waybar bemenu bemenu-wayland noto-fonts noto-fonts-extra ttf-font-awesome
+    yay -S j4-dmenu-desktop
+    ln -s ~/.dotfiles/config/sway ~/.config/sway
+    ln -s ~/.dotfiles/config/mako ~/.config/mako
+    ln -s ~/.dotfiles/config/swaylock ~/.config/swaylock
+    ln -s ~/.dotfiles/config/waybar ~/.config/waybar
+
 
 ## Other config files
 
@@ -148,9 +160,3 @@ Symlink config files:
 
     # alacritty.yml (hardlink for change detection)
     ln ~/.dotfiles/alacritty.yml ~/.config/alacritty/
-
-    # sway & co
-    ln -s ~/.dotfiles/config/sway ~/.config/sway
-    ln -s ~/.dotfiles/config/mako ~/.config/mako
-    ln -s ~/.dotfiles/config/swaylock ~/.config/swaylock
-    ln -s ~/.dotfiles/config/waybar ~/.config/waybar
