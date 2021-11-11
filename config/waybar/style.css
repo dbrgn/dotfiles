@@ -61,7 +61,7 @@ window#waybar {
     animation-direction: alternate;
 }
 
-#mode, #clock, #battery, #cpu, #memory, #temperature, #backlight, #network, #pulseaudio, #idle_inhibitor, #custom-media {
+#mode, #clock, #battery, #cpu, #memory, #temperature, #backlight, #network, #pulseaudio, #idle_inhibitor, #custom-media, #custom-pacman {
     padding: 0 8px;
     margin: 0 5px;
 }

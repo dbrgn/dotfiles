@@ -1,13 +1,14 @@
 {
     "layer": "bottom", // This ensures that bemenu is shown below waybar
-    // "position": "bottom", // Waybar position (top|bottom|left|right)
+
     "height": 40, // Waybar height (to be removed for auto height)
-    // "width": 1280, // Waybar width
+
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode"],
     "modules-center": ["sway/window"],
     "modules-right": [
         "custom/media",
+        "custom/pacman",
         "pulseaudio",
         "cpu",
         "memory",
@@ -20,6 +21,7 @@
         "clock",
         "tray"
     ],
+
     // Modules configuration
     "sway/workspaces": {
         "disable-scroll": true,
@@ -110,6 +112,12 @@
             "default": ["", "", ""]
         },
         "on-click": "pavucontrol"
+    },
+    "custom/pacman": {
+        "format": "[{} updates available]",
+        "interval": 3600,
+        "exec": "checkupdates | wc -l",
+        "exec-if": "test $(checkupdates | wc -l) -gt 10"
     },
     "custom/media": {
         "format": "{icon} {}",
