@@ -118,7 +118,7 @@ Symlink config files:
 
 ## Sway
 
-    sudo pacman -S sway mako swaylock waybar bemenu bemenu-wayland noto-fonts noto-fonts-extra ttf-font-awesome
+    sudo pacman -S sway mako swaylock waybar bemenu bemenu-wayland noto-fonts noto-fonts-extra ttf-font-awesome playerctl
     yay -S j4-dmenu-desktop
     ln -s ~/.dotfiles/config/sway ~/.config/sway
     ln -s ~/.dotfiles/config/mako ~/.config/mako
