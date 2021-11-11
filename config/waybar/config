@@ -16,6 +16,7 @@
         "backlight",
         "idle_inhibitor",
         "network",
+        "custom/openvpn",
         "battery",
         "battery#bat2",
         "clock",
@@ -133,5 +134,10 @@
         "on-click": "playerctl play-pause",
         "on-scroll-up": "playerctl next",
         "on-scroll-down": "playerctl previous"
+    },
+    "custom/openvpn": {
+        "format": " {}",
+        "interval": 10,
+        "exec": "IFS=, read -a fields <<<\"$(echo -e 'state' | nc -q 1 127.0.0.1 20999 | head -n 2 | tail -n 1)\" && if [[ \"${fields[1]}\" = \"\" ]]; then echo \"Down\"; else echo \"${fields[1]}\"; fi"
     }
 }
