@@ -47,10 +47,12 @@
     },
     "cpu": {
         "format": " {usage}%",
-        "tooltip": false
+        "tooltip": false,
+        "on-click": "alacritty -e bpytop"
     },
     "memory": {
-        "format": " {}%"
+        "format": " {}%",
+        "on-click": "alacritty -e bpytop"
     },
     "temperature": {
         // "thermal-zone": 2,
