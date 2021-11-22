@@ -8,6 +8,10 @@ My personal configuration files.
 
 ## NeoVim
 
+Install dependencies:
+
+    sudo pacman -S bash-language-server shellcheck
+
 Prepare directories:
 
     mkdir -p ~/.local/share/nvim/site/autoload/ ~/.config/nvim/

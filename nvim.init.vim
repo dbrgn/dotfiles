@@ -111,6 +111,9 @@ Plug 'hrsh7th/cmp-path'     " File system completion source
 Plug 'hrsh7th/cmp-buffer'   " Buffer words completion source
 Plug 'hrsh7th/cmp-cmdline'  " Vim cmdline completion
 
+" Linting
+Plug 'jose-elias-alvarez/null-ls.nvim' " Deps: plenary, nvim-lspconfig
+
 " TODO: Ultisnips
 " Plug 'SirVer/ultisnips'
 " Plug 'quangnguyen30192/cmp-nvim-ultisnips'
@@ -205,6 +208,17 @@ lua << EOF
 
     -- Kotlin autocompletion with kotlin_language_server
     require('lspconfig').kotlin_language_server.setup{}
+
+    -- Bash autocompletion with bash-language-server
+    require('lspconfig').bashls.setup{}
+
+    -- Linting with null-ls
+    require('null-ls').config({
+        sources = {
+            require('null-ls').builtins.diagnostics.shellcheck,
+        },
+    })
+    require('lspconfig')['null-ls'].setup{}
 
 EOF
 
