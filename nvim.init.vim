@@ -75,7 +75,8 @@ command! WQ  wq
 
 " Compile LaTeX and restart mupdf
 map <leader>l :w<CR> :!rubber -m pdftex %<CR><CR>
-map <leader>p :!zathura %:r.pdf &<CR><CR>
+"map <leader>l :w<CR> :!tectonic %<CR><CR>
+map <leader>p :!evince %:r.pdf &<CR><CR>
 
 " Run make
 map <leader>m :w<CR> :!make<CR><CR>
