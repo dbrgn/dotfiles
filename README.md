@@ -10,7 +10,7 @@ My personal configuration files.
 
 Install dependencies:
 
-    sudo pacman -S bash-language-server shellcheck
+    sudo pacman -S python-pynvim bash-language-server shellcheck
 
 Prepare directories:
 
@@ -122,7 +122,7 @@ Symlink config files:
 
 ## Sway
 
-    sudo pacman -S sway mako swaylock waybar bemenu bemenu-wayland noto-fonts noto-fonts-extra ttf-font-awesome playerctl pacman-contrib
+    sudo pacman -S sway mako swaylock waybar bemenu bemenu-wayland noto-fonts noto-fonts-extra ttf-font-awesome playerctl pacman-contrib jq grim slurp
     yay -S j4-dmenu-desktop
     ln -s ~/.dotfiles/config/sway ~/.config/sway
     ln -s ~/.dotfiles/config/mako ~/.config/mako
