@@ -1,0 +1,6 @@
+[screencast]
+output_name=HDMI-A-1
+max_fps=30
+exec_before=makoctl set-mode dnd
+exec_after=makoctl set-mode default
+chooser_type=none
