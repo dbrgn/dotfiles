@@ -1,6 +1,10 @@
 # Read `man 5 sway` for a complete reference.
 
-### Variables
+### Env Variables
+
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+
+### Local Variables
 
 # Mod key
 set $mod Mod4
