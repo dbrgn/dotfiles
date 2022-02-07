@@ -66,3 +66,7 @@ window#waybar {
     margin: 0 5px;
 }
 
+#workspaces button.urgent {
+    background-color: #ff727d;
+    border-bottom: 3px solid white;
+}
