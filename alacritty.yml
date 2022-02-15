@@ -65,7 +65,10 @@ window:
   # Override the variant of the GTK theme. Commonly supported values are `dark` and `light`.
   # Set this to `None` to use the default theme variant.
   #gtk_theme_variant: None
+  #
 
+  # Opacity
+  opacity: 0.92
 
 scrolling:
   # How many lines of scrollback to keep,
@@ -239,9 +242,6 @@ bell:
   duration: 120
   color: '#ffffff'
   command: None
-
-# Background opacity
-background_opacity: 0.92
 
 mouse:
   # Click settings
