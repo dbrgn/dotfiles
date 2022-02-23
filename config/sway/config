@@ -263,6 +263,8 @@ bindsym Ctrl+space exec makoctl dismiss
 
 # Firefox workaround
 # https://bugzilla.mozilla.org/show_bug.cgi?id=1628431
-for_window [title="Firefox — Sharing Indicator"] floating enable;
+for_window [app_id="firefox" title="Firefox — Sharing Indicator"] {
+    kill
+}
 
 include /etc/sway/config.d/*
