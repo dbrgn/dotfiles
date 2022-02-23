@@ -244,6 +244,9 @@ bindsym Alt+print exec filename=$(date +'screenshot-%Y%m%d-%H%M%S.png') && swaym
 # Screen lock
 bindsym Ctrl+Alt+L exec swaylock
 
+# Emoji picker
+bindsym $mod+e exec wofi-emoji
+
 # Status Bar:
 #
 # Read `man 5 waybar` for more information about this section.
