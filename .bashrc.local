@@ -62,6 +62,7 @@ alias wn1='watch -n 1'
 alias irc='ssh -p 2223 -t v2201907172493568.quicksrv.de "screen -d -r irc"'
 alias vimrc='vim ~/.vimrc'
 alias hl='rg --passthru'
+alias strip-exif='exiftool -overwrite_original -SerialNumber= -LensSerialNumber= -InternalSerialNumber= -GpsLatitude= -GpsLongitude='
 function shorturl() { curl --data "url=$@" https://s.dbrgn.ch/; }
 function urlfile() { chromium `awk -F= '/URL/{ print $2 }' "$1"`; }
 function uptmp() { scp -P 2223 -C "$1" dbrgn.ch:/srv/www/dbrgn/tmp/ && echo -n "https://tmp.dbrgn.ch/$1" | tee >(xsel -pi) | tee >(xsel -bi) && echo ""; }
