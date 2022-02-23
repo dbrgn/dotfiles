@@ -165,3 +165,6 @@ Symlink config files:
 
     # alacritty.yml (hardlink for change detection)
     ln ~/.dotfiles/alacritty.yml ~/.config/alacritty/
+
+    # abcde
+    ln -s ~/.dotfiles/.abcde.conf ~/.abcde.conf
