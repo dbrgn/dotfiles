@@ -192,7 +192,7 @@ lua << EOF
     -- Python autocompletion with pylsp
     require('lspconfig').pylsp.setup({
         settings = {
-            pyls = {
+            pylsp = {
                 configurationSources = { "pycodestyle" },
                 plugins = {
                     pycodestyle = {
