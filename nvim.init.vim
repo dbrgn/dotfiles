@@ -274,6 +274,9 @@ nnoremap <silent> g0    <cmd>lua vim.lsp.buf.document_symbol()<CR>
 nnoremap <silent> gw    <cmd>lua vim.lsp.buf.workspace_symbol()<CR>
 nnoremap <silent> <c-a> <cmd>lua vim.lsp.buf.code_action()<CR>
 
+" Code refactoring shortcuts
+nnoremap <silent> <leader>r <cmd>lua vim.lsp.buf.rename()<CR>
+
 " Set updatetime for CursorHold
 " 300ms of no cursor movement to trigger CursorHold
 set updatetime=300
