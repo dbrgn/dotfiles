@@ -214,12 +214,11 @@ lua << EOF
     require('lspconfig').bashls.setup{}
 
     -- Linting with null-ls
-    require('null-ls').config({
+    require('null-ls').setup({
         sources = {
             require('null-ls').builtins.diagnostics.shellcheck,
-        },
+        }
     })
-    require('lspconfig')['null-ls'].setup{}
 
 EOF
 
