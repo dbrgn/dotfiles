@@ -113,6 +113,8 @@ alias gitc="git commit"
 __git_complete gitc _git_commit
 alias gitco="git checkout"
 __git_complete gitco _git_checkout
+alias gitsw="git switch"
+__git_complete gitsw _git_switch
 alias gitd="git diff"
 __git_complete gitd _git_diff
 alias gitp="git pull"
