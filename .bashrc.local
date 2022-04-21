@@ -10,7 +10,10 @@ export PATH=$PATH:$HOME/.dotfiles/scripts
 if [ -f /usr/bin/virtualenvwrapper_lazy.sh ] ; then source /usr/bin/virtualenvwrapper_lazy.sh ; fi
 if [ -f /usr/share/git/completion/git-completion.bash ] ; then source /usr/share/git/completion/git-completion.bash ; fi
 if [ -f /usr/share/git/git-prompt.sh ] ; then source /usr/share/git/git-prompt.sh ; fi
-if [ -f /usr/share/nvm/init-nvm.sh ] ; then source /usr/share/nvm/init-nvm.sh ; fi
+if [ -f /usr/share/nvm/init-nvm.sh ] ; then
+    source /usr/share/nvm/init-nvm.sh
+    nvm use default > /dev/null
+fi
 
 # Function to check whether a command exists or not
 command_exists() { command -v "$1" >/dev/null 2>&1 ; }
