@@ -31,7 +31,7 @@ export ANSIBLE_NOCOWS=1
 
 # Colors
 export GREP_OPTIONS="--color=auto"
-export GREP_COLOR="1;32"
+export GREP_COLOR="mt=1;32"
 alias grep="$(which grep) $GREP_OPTIONS"
 unset GREP_OPTIONS
 export LESS_TERMCAP_mb=$'\e[1;37m'
