@@ -122,7 +122,9 @@ Symlink config files:
 
 ## Sway
 
-    sudo pacman -S sway mako swaylock waybar bemenu bemenu-wayland noto-fonts noto-fonts-extra ttf-font-awesome playerctl pacman-contrib jq grim slurp
+    sudo pacman -S sway mako swaylock waybar bemenu bemenu-wayland noto-fonts \
+        noto-fonts-extra ttf-font-awesome playerctl pacman-contrib jq grim slurp \
+        swayidle brightnessctl
     yay -S j4-dmenu-desktop wofi-emoji
     ln -s ~/.dotfiles/config/sway ~/.config/sway
     ln -s ~/.dotfiles/config/mako ~/.config/mako
