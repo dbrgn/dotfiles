@@ -24,6 +24,7 @@ export LC_CTYPE="en_US.UTF-8"          # Fix some locale issues
 export LESSHISTFILE="-"                # Don't create a less history file
 export HISTSIZE=100000
 export HISTFILESIZE=100000
+export HISTCONTROL=ignoreboth
 export RUST_SOURCE=/home/danilo/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust
 
 # Ansible
