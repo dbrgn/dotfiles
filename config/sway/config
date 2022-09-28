@@ -267,4 +267,11 @@ for_window [app_id="firefox" title="Firefox — Sharing Indicator"] {
     kill
 }
 
+# Send Thunderbird to tag 8
+assign [app_id="thunderbird"] 8
+# Send Threema Desktop to tag 5
+assign [class="threema-web"] 5
+assign [class="threema-work-web"] 5
+assign [class="threema-red-web"] 5
+
 include /etc/sway/config.d/*
