@@ -131,6 +131,9 @@ Symlink config files:
     ln -s ~/.dotfiles/config/swaylock ~/.config/swaylock
     ln -s ~/.dotfiles/config/waybar ~/.config/waybar
     ln -s ~/.dotfiles/config/xdg-desktop-portal-wlr/ ~/.config/xdg-desktop-portal-wlr
+    sudo mv /usr/share/wayland-sessions/sway.desktop{,.old}
+    sudo ln -s ~/.dotfiles/startsway.sh /usr/local/bin/
+    sudo ln -s ~/.dotfiles/sway.desktop /usr/share/wayland-sessions/
 
 
 ## Other config files

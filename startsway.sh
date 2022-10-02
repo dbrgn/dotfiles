@@ -11,6 +11,7 @@ export ELM_ENGINE=wayland_wgl
 export SDL_VIDEODRIVER=wayland
 export _JAVA_AWT_WM_NONREPARENTING=1
 export XDG_CURRENT_DESKTOP=sway
+export PYOPENGL_PLATFORM=osmesa
 
 # no redirecting stdout/stderr; handled by SDDM
 exec sway
