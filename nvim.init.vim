@@ -136,6 +136,9 @@ Plug 'udalov/kotlin-vim'
 " Test running
 Plug 'vim-test/vim-test'
 
+" Navigation
+Plug 'ggandor/leap.nvim'
+
 " Initialize plugin system
 call plug#end()
 
@@ -272,6 +275,11 @@ nnoremap <silent> gr    <cmd>lua vim.lsp.buf.references()<CR>
 nnoremap <silent> g0    <cmd>lua vim.lsp.buf.document_symbol()<CR>
 nnoremap <silent> gw    <cmd>lua vim.lsp.buf.workspace_symbol()<CR>
 nnoremap <silent> <c-a> <cmd>lua vim.lsp.buf.code_action()<CR>
+
+" Code navigation with leap.nvim
+lua <<EOF
+    require('leap').set_default_keymaps()
+EOF
 
 " Code refactoring shortcuts
 nnoremap <silent> <leader>r <cmd>lua vim.lsp.buf.rename()<CR>
