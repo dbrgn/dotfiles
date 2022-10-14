@@ -274,7 +274,11 @@ nnoremap <silent> <c-a> <cmd>lua vim.lsp.buf.code_action()<CR>
 
 " Code navigation with leap.nvim
 lua <<EOF
-    require('leap').set_default_keymaps()
+    require('leap')
+
+    -- Manually configure trigger key
+    vim.keymap.set('n', 'ö', '<Plug>(leap-forward)', {})
+    vim.keymap.set('n', 'é', '<Plug>(leap-backward)', {})
 EOF
 
 " Code refactoring shortcuts
