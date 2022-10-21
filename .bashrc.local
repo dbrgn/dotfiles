@@ -69,7 +69,7 @@ alias hl='rg --passthru'
 alias strip-exif='exiftool -overwrite_original -SerialNumber= -LensSerialNumber= -InternalSerialNumber= -GpsLatitude= -GpsLongitude='
 function shorturl() { curl --data "url=$@" https://s.dbrgn.ch/; }
 function urlfile() { chromium `awk -F= '/URL/{ print $2 }' "$1"`; }
-function uptmp() { scp -P 2223 -C "$1" dbrgn.ch:/srv/www/dbrgn/tmp/ && echo -n "https://tmp.dbrgn.ch/$1" | tee >(xsel -pi) | tee >(xsel -bi) && echo ""; }
+function uptmp() { scp -P 2223 -C "$1" dbrgn.ch:/srv/www/dbrgn/tmp/ && echo -n "https://tmp.dbrgn.ch/$1" | tee >(wl-copy -p) | tee >(wl-copy) && echo ""; }
 function clone() { git clone git@github.com:${1}.git; }
 function aur-clone() { git clone ssh://aur@aur.archlinux.org/${1}.git; }
 function aur-shellcheck() { shellcheck PKGBUILD -e SC2154,SC2034,SC2164 -s bash; }
