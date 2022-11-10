@@ -263,9 +263,11 @@ bindsym Ctrl+space exec makoctl dismiss
 
 # Firefox workaround
 # https://bugzilla.mozilla.org/show_bug.cgi?id=1628431
-for_window [app_id="firefox" title="Firefox — Sharing Indicator"] {
-    kill
-}
+for_window [app_id="firefox" title="Firefox — Sharing Indicator"] kill
+
+# Make certain windows floating
+# Thunar file operations
+for_window [title="File Operation Progress"] floating enable
 
 # Send Thunderbird to tag 8
 assign [app_id="thunderbird"] 8
