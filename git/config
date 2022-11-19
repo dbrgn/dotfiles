@@ -1,6 +1,7 @@
 [user]
 	name = Danilo Bargen
 	email = mail@dbrgn.ch
+	signingkey = 0xB993FF98A90C9AB1
 [color]
 	ui = true
 [github]
