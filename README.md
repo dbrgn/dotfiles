@@ -173,3 +173,6 @@ Symlink config files:
 
     # abcde
     ln -s ~/.dotfiles/.abcde.conf ~/.abcde.conf
+
+    # gpg
+    ln -s ~/.dotfiles/gpg.conf ~/.gnupg/gpg.conf
