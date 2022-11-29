@@ -259,7 +259,7 @@ bar {
 
 # Notifications
 exec mako
-bindsym Ctrl+space exec makoctl dismiss
+bindsym Ctrl+Shift+space exec makoctl dismiss
 
 # Firefox workaround
 # https://bugzilla.mozilla.org/show_bug.cgi?id=1628431
