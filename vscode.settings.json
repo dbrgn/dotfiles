@@ -1,0 +1,16 @@
+{
+    "workbench.colorTheme": "Default Dark+ Experimental",
+    "telemetry.telemetryLevel": "off",
+    "editor.formatOnSave": true,
+    "gitlens.codeLens.authors.enabled": false,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.advanced.blame.customArguments": [
+        "--ignore-revs-file",
+        ".git-blame-ignore-revs"
+    ],
+    "rust-analyzer.inlayHints.chainingHints.enable": false,
+    "rust-analyzer.inlayHints.closingBraceHints.minLines": 30,
+    "rust-analyzer.inlayHints.lifetimeElisionHints.enable": "skip_trivial",
+    "rust-analyzer.inlayHints.typeHints.enable": false,
+    "rust-analyzer.inlayHints.parameterHints.enable": false
+}

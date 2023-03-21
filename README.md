@@ -176,3 +176,6 @@ Symlink config files:
 
     # gpg
     ln -s ~/.dotfiles/gpg.conf ~/.gnupg/gpg.conf
+
+    # VS Code
+    ln -s ~/.dotfiles/vscode.settings.json ~/.config/Code/User/settings.json
