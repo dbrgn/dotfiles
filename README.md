@@ -177,5 +177,8 @@ Symlink config files:
     # gpg
     ln -s ~/.dotfiles/gpg.conf ~/.gnupg/gpg.conf
 
+    # chromium
+    ln -s ~/.dotfiles/chromium-flags.conf ~/.config/chromium-flags.conf
+
     # VS Code
     ln -s ~/.dotfiles/vscode.settings.json ~/.config/Code/User/settings.json
