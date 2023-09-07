@@ -26,6 +26,7 @@ export HISTSIZE=100000
 export HISTFILESIZE=100000
 export HISTCONTROL=ignoreboth
 export RUST_SOURCE=/home/danilo/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust
+export RIPGREP_CONFIG_PATH=/home/danilo/.dotfiles/.ripgreprc
 
 # Ansible
 export ANSIBLE_NOCOWS=1
