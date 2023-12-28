@@ -169,8 +169,8 @@ Symlink config files:
     # calf
     ln -s ~/.dotfiles/calf.conf ~/calf.conf
 
-    # alacritty.yml (hardlink for change detection)
-    ln ~/.dotfiles/config/alacritty/alacritty.toml ~/.config/alacritty/
+    # alacritty
+    echo 'import = ["~/.dotfiles/config/alacritty/alacritty.toml"]' > ~/.config/alacritty/alacritty.toml
 
     # abcde
     ln -s ~/.dotfiles/.abcde.conf ~/.abcde.conf
