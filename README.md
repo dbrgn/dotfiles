@@ -170,7 +170,7 @@ Symlink config files:
     ln -s ~/.dotfiles/calf.conf ~/calf.conf
 
     # alacritty.yml (hardlink for change detection)
-    ln ~/.dotfiles/alacritty.yml ~/.config/alacritty/
+    ln ~/.dotfiles/config/alacritty/alacritty.toml ~/.config/alacritty/
 
     # abcde
     ln -s ~/.dotfiles/.abcde.conf ~/.abcde.conf
