@@ -47,10 +47,6 @@ yellow = "0xf9ec2c"
 background = "0x111111"
 foreground = "0xeaeaea"
 
-[colors.search.footer_bar]
-background = "#c5c8c6"
-foreground = "#1d1f21"
-
 [colors.search.matches]
 background = "#ffffff"
 foreground = "#000000"
@@ -63,7 +59,6 @@ unfocused_hollow = true
 log_level = "Warn"
 persistent_logging = false
 print_events = false
-ref_test = false
 render_timer = false
 
 [env]
@@ -654,12 +649,6 @@ hide_when_typing = false
 [[mouse.bindings]]
 action = "PasteSelection"
 mouse = "Middle"
-
-[mouse.double_click]
-threshold = 300
-
-[mouse.triple_click]
-threshold = 300
 
 [scrolling]
 history = 10000
