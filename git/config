@@ -10,6 +10,7 @@
 	lg = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr %an)%Creset' --abbrev-commit --date=relative
 	wdiff = diff --color-words
 	safemerge = merge --ff-only
+	fpush = push --force-with-lease
 	unstage = reset HEAD --
     branchlist = for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
 	git = !cd "$GIT_PREFIX" && git
