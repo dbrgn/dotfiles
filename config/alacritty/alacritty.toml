@@ -1,4 +1,3 @@
-live_config_reload = true
 
 [env]
 # These variables are added as environment variables for any process spawned by Alacritty
@@ -64,3 +63,6 @@ yellow = "0xffcc66"
 animation = "EaseOutSine"
 color = "#ffffff"
 duration = 120
+
+[general]
+live_config_reload = true
