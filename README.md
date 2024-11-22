@@ -170,7 +170,8 @@ Symlink config files:
     ln -s ~/.dotfiles/calf.conf ~/calf.conf
 
     # alacritty
-    echo 'import = ["~/.dotfiles/config/alacritty/alacritty.toml"]' > ~/.config/alacritty/alacritty.toml
+    echo '[general]' > ~/.config/alacritty/alacritty.toml
+    echo 'import = ["~/.dotfiles/config/alacritty/alacritty.toml"]' >> ~/.config/alacritty/alacritty.toml
 
     # abcde
     ln -s ~/.dotfiles/.abcde.conf ~/.abcde.conf
