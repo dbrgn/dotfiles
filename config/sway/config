@@ -95,6 +95,15 @@ input "1739:30383:CUST0001:00_06CB:76AF_Touchpad" {
     # Inverted scrolling (move content, not viewport)
     natural_scroll enabled
 }
+input "11311:40:SNSL0028:00_2C2F:0028_Touchpad" {
+    # Enable clicking by tapping
+    tap enabled
+    drag enabled
+    # Disable touchpad while typing
+    dwt enabled
+    # Inverted scrolling (move content, not viewport)
+    natural_scroll enabled
+}
 
 ### Key bindings
 #
