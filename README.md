@@ -25,7 +25,7 @@ Configure fontconfig:
 
 Install dependencies:
 
-    sudo pacman -S python-pynvim bash-language-server shellcheck
+    sudo pacman -S python-pynvim bash-language-server python-lsp-server shellcheck
 
 Prepare directories:
 
