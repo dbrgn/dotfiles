@@ -52,23 +52,6 @@ To use `.bashrc.local`, source it in your regular `.bashrc`:
     source ~/.dotfiles/.bashrc.local
 
 
-## Window Manager
-
-Symlink config files:
-
-    ln -s ~/.dotfiles/.xprofile ~
-    ln -s ~/.dotfiles/.xsetroot.sh ~
-
-
-## Systemd Services
-
-    sudo cp services/slock.service /etc/systemd/system/
-    sudo cp services/xmodmap.service /etc/systemd/system/
-    sudo cp services/xkbmap-ch.service /etc/systemd/system/
-    sudo systemctl enable slock xmodmap xkbmap-ch
-    sudo systemctl start xidlelock xmodmap xkbmap-ch
-
-
 ## SSH Agent
 
     mkdir -p ~/.config/systemd/user/
@@ -98,15 +81,6 @@ Symlink config files:
 
     # screen
     ln -s ~/.dotfiles/.screenrc ~
-
-    # xresources
-    ln -s ~/.dotfiles/.Xresources ~
-
-    # xbindkeys
-    ln -s ~/.dotfiles/.xbindkeysrc ~
-
-    # xmodmap
-    ln -s ~/.dotfiles/.Xmodmap ~
 
     # psql
     ln -s ~/.dotfiles/.psqlrc ~

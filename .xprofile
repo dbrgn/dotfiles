@@ -1,8 +1,0 @@
-# Fix misbehaving Java applications
-wmname LG3D
-
-# Set status bar
-while true; do
-    bash .xsetroot.sh
-    sleep 5s
-done &
