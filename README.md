@@ -65,13 +65,16 @@ To use `.bashrc.local`, source it in your regular `.bashrc`:
     sudo pacman -S sway mako swaylock waybar bemenu bemenu-wayland noto-fonts \
         noto-fonts-extra ttf-font-awesome playerctl pacman-contrib jq grim slurp \
         swayidle brightnessctl wl-clipboard
-    yay -S j4-dmenu-desktop wofi-emoji
+    yay -S j4-dmenu-desktop wofi-emoji safeeyes
+
     ln -s ~/.dotfiles/config/sway ~/.config/sway
     ln -s ~/.dotfiles/config/mako ~/.config/mako
     ln -s ~/.dotfiles/config/swaylock ~/.config/swaylock
     ln -s ~/.dotfiles/config/waybar ~/.config/waybar
+    ln -s ~/.dotfiles/config/safeeyes ~/.config/safeeyes
     ln -s ~/.dotfiles/config/xdg-desktop-portal/ ~/.config/xdg-desktop-portal
     ln -s ~/.dotfiles/config/xdg-desktop-portal-wlr/ ~/.config/xdg-desktop-portal-wlr
+
     sudo mv /usr/share/wayland-sessions/sway.desktop{,.old}
     sudo ln -s ~/.dotfiles/startsway.sh /usr/local/bin/
     sudo ln -s ~/.dotfiles/sway.desktop /usr/share/wayland-sessions/

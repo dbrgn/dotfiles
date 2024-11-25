@@ -279,6 +279,9 @@ bindsym Ctrl+Shift+space exec makoctl dismiss
 # XDG desktop portal
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 
+# Micro breaks
+exec safeeyes
+
 # Firefox workaround
 # https://bugzilla.mozilla.org/show_bug.cgi?id=1628431
 for_window [app_id="firefox" title="Firefox — Sharing Indicator"] kill
