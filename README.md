@@ -6,6 +6,21 @@ My personal configuration files.
     git clone git@github.com:dbrgn/dotfiles.git ~/.dotfiles
 
 
+## Fonts
+
+Copy and install powerline fonts
+
+    mkdir -p ~/.fonts/{truetype,opentype}/
+    cp ~/.dotfiles/fonts/*.ttf ~/.fonts/truetype/
+    cp ~/.dotfiles/fonts/*.otf ~/.fonts/opentype/
+    fc-cache -fv ~/.fonts
+
+Configure fontconfig:
+
+    mkdir -p ~/.config/fontconfig/
+    ln -s ~/.dotfiles/fonts.conf ~/.config/fontconfig/
+
+
 ## NeoVim
 
 Install dependencies:
@@ -28,64 +43,6 @@ Download vim-plug:
 Install plugins:
 
     nvim +PlugInstall
-
-
-## Vim
-
-Contains many tools for Python development.
-
-### Requirements
-
- * vim compiled with python support
- * C compiler
- * C++ compiler and python headers
-
-### Setup
-
-Create symlinks
-
-    ln -s ~/.dotfiles/.vim ~
-    ln -s ~/.dotfiles/.vimrc ~
-
-Copy and install powerline fonts
-
-    mkdir -p ~/.fonts/{truetype,opentype}/
-    cp ~/.dotfiles/fonts/*.ttf ~/.fonts/truetype/
-    cp ~/.dotfiles/fonts/*.otf ~/.fonts/opentype/
-    fc-cache -fv ~/.fonts
-
-Configure fontconfig:
-
-    mkdir -p ~/.config/fontconfig/
-    ln -s ~/.dotfiles/fonts.conf ~/.config/fontconfig/
-
-Setup vundle
-
-    git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-    vim +BundleInstall +qall
-    vim +VimProcInstall
-
-Install vimproc
-
-    vim +VimProcInstall +qall
-
-Configure YCM
-
-    cd ~/.vim/bundle/YouCompleteMe/
-    git submodule update --init --recursive
-    python install.py --rust-completer --ts-completer
-
-Update vundle
-
-    vim +BundleInstall! +qall
-
-Setup gocode
-
-    go get -u github.com/nsf/gocode
-
-Install dependencies for ale
-
-    sudo pacman -S flake8 mypy
 
 
 ## Bash

@@ -51,7 +51,7 @@ stty -ixon
 # Aliases
 alias ..="cd .."
 alias ...="cd ../.."
-alias vim="vim -p"
+alias vim="nvim -p"
 alias ls="ls --color=auto"
 alias o="xdg-open"
 alias please="sudo"
@@ -65,7 +65,6 @@ alias sp='./manage.py shell_plus'
 alias cel='celery -A config worker -l info -Q celery,high_prio -O fair'
 alias wn1='watch -n 1'
 alias irc='ssh -p 2223 -t dbrgn.ch "screen -d -r irc"'
-alias vimrc='vim ~/.vimrc'
 alias hl='rg --passthru'
 alias strip-exif='exiftool -overwrite_original -SerialNumber= -LensSerialNumber= -InternalSerialNumber= -GpsLatitude= -GpsLongitude='
 function shorturl() { curl --data "url=$@" https://s.dbrgn.ch/; }

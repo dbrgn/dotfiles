@@ -312,7 +312,7 @@ c.TerminalIPythonApp.display_banner = False
 c.TerminalInteractiveShell.confirm_exit = False
 
 # Set the editor used by IPython (default to $EDITOR/vi/notepad).
-c.TerminalInteractiveShell.editor = 'vim'
+c.TerminalInteractiveShell.editor = 'nvim'
 
 # The shell program to be used for paging.
 c.TerminalInteractiveShell.pager = 'less'
