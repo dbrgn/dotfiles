@@ -263,6 +263,25 @@ bindsym Alt+print exec filename=$(date +'screenshot-%Y%m%d-%H%M%S.png') && swaym
 # Screen lock
 bindsym Ctrl+Alt+L exec swaylock
 
+# Screen mirror
+mode "present" {
+    # "m" to mirror
+    bindsym m mode "default"; exec wl-present mirror eDP-1
+    # "f" to freeze/unfreeze
+    bindsym f mode "default"; exec wl-present toggle-freeze
+    # "o" to choose output
+    bindsym o mode "default"; exec wl-present set-output
+    # "r" to choose region
+    bindsym r mode "default"; exec wl-present set-region
+    # "s" for scaling
+    bindsym s mode "default"; exec wl-present set-scaling
+
+    # Return to default mode
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym XF86Display mode "present"
+
 # Emoji picker
 bindsym $mod+e exec wofi-emoji
 
