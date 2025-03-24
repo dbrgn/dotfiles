@@ -1,3 +1,31 @@
 #!/usr/bin/env bash
 set -euo pipefail
-echo "$1" > /sys/firmware/acpi/platform_profile
+
+case "$1" in
+  "performance")
+    echo "performance" > /sys/firmware/acpi/platform_profile
+    ;;
+  "balanced")
+    echo "balanced" > /sys/firmware/acpi/platform_profile
+    ;;
+  "low-power")
+    echo "low-power" > /sys/firmware/acpi/platform_profile
+    ;;
+  "cycle")
+    current=$(cat /sys/firmware/acpi/platform_profile)
+    case "$current" in
+      "performance")
+        echo "balanced" > /sys/firmware/acpi/platform_profile
+        ;;
+      "balanced")
+        echo "low-power" > /sys/firmware/acpi/platform_profile
+        ;;
+      "low-power")
+        echo "performance" > /sys/firmware/acpi/platform_profile
+        ;;
+    esac
+    ;;
+  *)
+    echo "Invalid parameter: $1"
+    exit 1
+esac
