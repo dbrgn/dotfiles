@@ -29,3 +29,6 @@ case "$1" in
     echo "Invalid parameter: $1"
     exit 1
 esac
+
+# Refresh waybar
+pkill -SIGRTMIN+10 waybar
