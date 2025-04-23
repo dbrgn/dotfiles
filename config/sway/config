@@ -300,7 +300,7 @@ bindsym Ctrl+Shift+space exec makoctl dismiss
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 
 # Micro breaks
-exec safeeyes
+exec sleep 2 && safeeyes
 
 # Firefox workaround
 # https://bugzilla.mozilla.org/show_bug.cgi?id=1628431
