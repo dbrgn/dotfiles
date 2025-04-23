@@ -5,6 +5,8 @@
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$HOME/.dotfiles/scripts
+export PATH=$PATH:$HOME/Android/Sdk/platform-tools
+export PATH=$PATH:$HOME/.cargo/bin/
 
 # Includes
 if [ -f /usr/bin/virtualenvwrapper_lazy.sh ] ; then source /usr/bin/virtualenvwrapper_lazy.sh ; fi
