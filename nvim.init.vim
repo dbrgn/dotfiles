@@ -110,7 +110,7 @@ Plug 'hrsh7th/cmp-buffer'   " Buffer words completion source
 Plug 'hrsh7th/cmp-cmdline'  " Vim cmdline completion
 
 " Linting
-Plug 'jose-elias-alvarez/null-ls.nvim' " Deps: plenary, nvim-lspconfig
+Plug 'nvimtools/none-ls.nvim' " Deps: plenary, nvim-lspconfig
 
 " TODO: Ultisnips
 " Plug 'SirVer/ultisnips'
