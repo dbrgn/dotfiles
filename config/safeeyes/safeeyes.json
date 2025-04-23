@@ -122,12 +122,6 @@
             "name": "Roll your eyes a few times to each side"
         },
         {
-            "name": "Rotate your eyes in clockwise direction"
-        },
-        {
-            "name": "Rotate your eyes in counterclockwise direction"
-        },
-        {
             "name": "Blink your eyes"
         },
         {
@@ -135,6 +129,21 @@
         },
         {
             "name": "Have some water"
+        },
+        {
+            "name": "Let in some fresh air"
+        },
+        {
+            "name": "Rotate your head left and right"
+        },
+        {
+            "name": "\ud83d\udc22"
+        },
+        {
+            "name": "Stretch left side"
+        },
+        {
+            "name": "Stretch right side"
         }
     ],
     "shortcut_disable_time": 2,
