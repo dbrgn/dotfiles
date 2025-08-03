@@ -1,6 +1,6 @@
 [screencast]
 output_name=HDMI-A-1
 max_fps=30
-exec_before=makoctl mode -s dnd
-exec_after=makoctl mode -r dnd
+exec_before=bash -c "makoctl mode -s dnd && safeeyes --disable"
+exec_after=bash -c "makoctl mode -r dnd && safeeyes --enable"
 chooser_type=none
