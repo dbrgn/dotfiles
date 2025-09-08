@@ -7,6 +7,8 @@ if [[ "$network_info" == *"brgn"* ]]; then
     echo "home"
 elif [[ "$network_info" == *"rium"* ]]; then
     echo "work"
+elif [[ "$network_info" == *"Threema"* ]]; then
+    echo "work"
 else
     echo "unknown"
 fi
