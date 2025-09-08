@@ -63,7 +63,7 @@ To use `.bashrc.local`, source it in your regular `.bashrc`:
 ## Sway
 
     sudo pacman -S sway mako swaylock waybar bemenu bemenu-wayland noto-fonts \
-        noto-fonts-extra ttf-font-awesome playerctl pacman-contrib jq grim slurp \
+        noto-fonts-extra otf-font-awesome playerctl pacman-contrib jq grim slurp \
         swayidle brightnessctl wl-clipboard wl-mirror
     yay -S j4-dmenu-desktop wofi-emoji safeeyes
 
